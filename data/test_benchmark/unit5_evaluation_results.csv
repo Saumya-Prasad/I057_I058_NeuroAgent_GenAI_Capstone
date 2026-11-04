@@ -1,0 +1,6 @@
+case_id,true_vol_cm3,pred_vol_cm3,vol_abs_error,rouge_1,rouge_2,rouge_l,bleu_4,meteor,retrieval_mrr,retrieval_recall_3,critic_status
+anat,89.056,80.924,8.132,0.1031,0.0359,0.0807,0.0149,0.2403,1.0,1.0,APPROVED
+anat,104.591,117.43,12.839,0.1031,0.0359,0.0807,0.0149,0.2403,1.0,1.0,APPROVED
+anat,1.279,1.656,0.377,0.1084,0.0345,0.0887,0.0147,0.2185,1.0,1.0,APPROVED
+anat,32.931,32.826,0.105,0.1062,0.0398,0.0885,0.0153,0.2457,1.0,1.0,APPROVED
+anat,25.816,23.429,2.387,0.1018,0.0354,0.0841,0.0147,0.2382,1.0,1.0,APPROVED

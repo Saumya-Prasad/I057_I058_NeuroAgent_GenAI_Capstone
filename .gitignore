@@ -1,0 +1,72 @@
+# ==============================================================================
+# NeuroAgent: Git Ignore Configuration
+# ==============================================================================
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyTorch & Model Caches
+pt_cache/
+*.pt.cache
+
+# Virtual Environments & Packaging
+venv/
+.venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE & OS Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Large Archives & Raw External Datasets (>100MB)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+BIOSE MRI A Multimodal Brain MRI Dataset with Clin.zip
+
+# Coursework & Personal Temporary Files
+Unit *.pdf
+WhatsApp Image *.jpeg
+paper_extracted.txt
+deck_redesigned_extracted.txt
+264-ICTCS 2026.pdf
+Neuro_Copilot_Master_Presentation.pptx
+
+# Local Generated ChromaDB Vector Store (Rebuildable via 'python src/ingest_and_chunk_unstructured.py')
+data/vector_store/
+
+# Local Environment Secrets
+.env
+.env.local
+*.secret

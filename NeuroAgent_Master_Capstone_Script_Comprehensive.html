@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NeuroAgent: 40-Slide Capstone Presentation Script & Clinical-Technical Manual</title>
+<style>
+
+@page {
+    size: letter portrait;
+    margin: 16mm 16mm 18mm 16mm;
+    @bottom-right {
+        content: "Page " counter(page);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 10px;
+        color: #64748b;
+    }
+    @bottom-left {
+        content: "NeuroAgent: Master's Capstone Presentation Script & Viva Guide (2026)";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 10px;
+        color: #64748b;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.55;
+    color: #1e293b;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    border-bottom: 2.5px solid #2563eb;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e3a8a;
+    background-color: #f1f5f9;
+    border-left: 5px solid #1e3a8a;
+    padding: 8px 12px;
+    margin-top: 26px;
+    margin-bottom: 14px;
+    page-break-after: avoid;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0369a1;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+h4 {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #334155;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+blockquote {
+    border-left: 4px solid #2563eb;
+    background-color: #f8fafc;
+    margin: 8px 0 12px 0;
+    padding: 10px 16px;
+    border-radius: 0 6px 6px 0;
+    font-size: 12px;
+    color: #0f172a;
+    line-height: 1.6;
+    font-style: normal;
+}
+
+blockquote p {
+    margin-bottom: 6px;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+code {
+    font-family: "Cascadia Code", "Consolas", "Courier New", monospace;
+    font-size: 11px;
+    background-color: #f1f5f9;
+    color: #0f766e;
+    padding: 2px 4px;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+pre {
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 11.5px;
+}
+
+th, td {
+    padding: 6px 8px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8fafc;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 18px 0;
+}
+
+.slide-block {
+    page-break-inside: avoid;
+    margin-bottom: 16px;
+}
+
+</style>
+</head>
+<body>
+<h1>NeuroAgent: Comprehensive 40-Slide Master's Capstone Defense Script &amp; Clinical-Technical Manual</h1>
+<p><strong>Companion Presentation Deck:</strong> <a href="file:///c:/Users/Saumya_Shambhavi/Downloads/GEN%20AI%20+%20CAPSTONE/NeuroAgent_Master_Capstone_Deck_Redesigned.pptx">NeuroAgent_Master_Capstone_Deck_Redesigned.pptx</a><br />
+<strong>Authors:</strong> Saumya Prasad &amp; Shambhavi Prasad | <strong>Course:</strong> Generative AI &amp; Master's Capstone (2026)<br />
+<strong>Hardware Verification:</strong> NVIDIA GeForce RTX 4060 Laptop GPU (<code>cuda:0</code>, 8 GB VRAM)<br />
+<strong>Evaluation Cohort:</strong> ATLAS v3.0 ($n=1,453$), BIOSE Hospital Report Corpus ($n=34$), Stroke QA Benchmark ($n=50$)</p>
+<div style="border-left: 4px solid #7c3aed; background: #f5f3ff; padding: 12px 18px; margin: 16px 0; border-radius: 6px;">
+<div style="font-weight: 700; color: #7c3aed; margin-bottom: 6px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">🟣 IMPORTANT DIRECTIVE</div>
+<div style="font-size: 13.5px; color: #1f2937; line-height: 1.5;">**How to Use This Comprehensive Defense Script:**<br>Every single slide from Slide 1 to Slide 40 contains:<br>1. **Slide Purpose & Pacing:** Exact target time to keep the complete defense within 20–25 minutes.<br>2. **Visual Pointer Cues:** What exact diagrams, numbers, or cards on the slide to direct the examiner's eyes to.<br>3. **Word-for-Word Spoken Script:** Authoritative, publication-grade academic delivery with zero filler words.<br>4. **Explanations for Anyone (Plain English & Layman Concepts):**<br>- **Biological & Medical Aspects:** What actually happens in the human brain, neurons, blood vessels, and why doctors care.<br>- **Technical & Computational Aspects:** How the algorithms, neural networks, equations, and code actually work under the hood.<br>5. **Viva Defense Pro-Tip:** The exact trap question examiners love to ask on this topic and your bulletproof response.</div>
+</div>
+<hr />
+<h2>PART 1: OVERVIEW, CLINICAL PROBLEM &amp; SYSTEM ARCHITECTURE (SLIDES 1 – 6)</h2>
+<hr />
+<h3>SLIDE 1: Title Slide — Multimodal Medical AI &amp; Agentic RAG</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>NeuroAgent: 3D Volumetric Perception, Domain-Specific Modular RAG &amp; LangGraph Multi-Agent Architecture for Stroke Neuro-Radiology</em></li>
+<li><strong>Metrics Displayed:</strong> <code>309k</code> ACS-UNet parameters | <code>100%</code> Recall@3 (PubMedBERT) | <code>0.0%</code> Final clinical drift</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>🎯 Speaker Goal:</strong> Establish the interdisciplinary bridge connecting your accepted 3D computer vision work with clinical Generative AI, while anchoring the presentation on four empirical pillars.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Respected members of the examination committee and distinguished faculty, good morning. Today, Shambhavi and I are honored to present our Master's Capstone project: <strong>NeuroAgent: 3D Volumetric Perception, Domain-Specific Modular RAG, and LangGraph Multi-Agent Architecture for Stroke Neuro-Radiology</strong>.</p>
+<p>In clinical healthcare today, computer vision and Generative AI are often treated as completely separate worlds. Computer vision models output raw numbers or colored 3D heatmaps, but in an emergency room, a colored pixel map cannot treat a stroke patient. On the other hand, commercial Large Language Models produce fluent text, but they hallucinate critical numbers, alter dosages, and cannot see 3D volumetric MRI scans.</p>
+<p><strong>NeuroAgent</strong> is an autonomous, neuro-symbolic clinical system that bridges this entire divide. It takes a raw 3D patient brain MRI, segments the acute ischemic lesion with a lightweight 309,000-parameter vision model, extracts exact mathematical biomarkers, queries 13 peer-reviewed stroke guidelines via a 4-stage Modular RAG pipeline, and synthesizes a certified American College of Radiology report through a closed-loop LangGraph multi-agent architecture.</p>
+<p>Every single component presented today has been evaluated through 5 live empirical ablation studies executed on our NVIDIA GeForce RTX 4060 GPU with zero simulated data. Let us begin with an overview of our architecture."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (What is an Ischemic Stroke?):</strong></li>
+<li>The human brain requires a constant, uninterrupted supply of oxygen and glucose carried by blood. An <strong>ischemic stroke</strong> occurs when a blood clot (thrombus or embolus) lodges in a cerebral artery—most commonly the Middle Cerebral Artery (MCA)—blocking blood flow. Within minutes, brain cells deprived of oxygen lose their energy supply (ATP), their cell membranes collapse, water rushes into the cells (causing <strong>cytotoxic edema</strong>), and brain cells begin to die. This is why neurologists say <em>"Time is Brain"</em>: an untreated stroke destroys approximately <strong>1.9 million neurons every single minute</strong>.</li>
+<li><strong>Technical / Computational Aspect (What is Multimodal Medical AI &amp; Agentic RAG?):</strong></li>
+<li><strong>Multimodal</strong> means the AI processes more than one type of data: it reads both <strong>3D imaging tensors</strong> (spatial voxel arrays from MRI scanners) and <strong>unstructured text</strong> (clinical patient histories and medical guideline PDFs).</li>
+<li><strong>Agentic RAG</strong> means the retrieval is not a dumb keyword search. Instead, autonomous software "agents" act like digital specialists: one calculates lesion measurements, one searches the medical literature, one writes the draft report, and an independent critic checks for medical errors before certifying the document.</li>
+</ul>
+<h4>💡 Viva Defense Pro-Tip:</h4>
+<ul>
+<li><em>Examiner Question:</em> "Why did you build an end-to-end system instead of just training a better segmentation model or fine-tuning an LLM?"</li>
+<li><em>Your Answer:</em> "Because in acute stroke triage, segmentation alone leaves clinicians with an uninterpreted tensor, while fine-tuning an LLM causes catastrophic forgetting and hallucinated drug doses. An end-to-end neuro-symbolic pipeline grounds the generative language model in exact physical 3D measurements and auditable clinical guidelines."</li>
+</ul>
+<hr />
+<h3>SLIDE 2: NeuroAgent at a Glance</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>NeuroAgent at a Glance — 4 Foundational Pillars</em></li>
+<li><strong>Cards Displayed:</strong> 3D Perception Layer | Modular RAG Pipeline | LangGraph Multi-Agent System | Quantitative GPU Ablations</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Sweep left to right across the 4 color-coded cards, briefly naming the specific parameter count, embedding dimension, agent framework, and GPU hardware.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"To understand how NeuroAgent works, consider our four engineering pillars shown here:</p>
+<ol>
+<li><strong>First, the 3D Perception Layer:</strong> We deploy ACS-UNet, our 3D convolutional neural network with only 309,387 parameters. Evaluated on the 1,453-scan ATLAS v3.0 benchmark, it achieves a 61.91% 5-fold mean Dice score in just 146 milliseconds while running in only 4.2 GB of VRAM.</li>
+<li><strong>Second, the Modular RAG Pipeline:</strong> We reject naive vector search. We implement domain-specific PubMedBERT 768-dimensional embeddings and ChromaDB HNSW indexing across 13 peer-reviewed stroke guidelines and 34 hospital reports, delivering 100% Recall@3 in under 15 milliseconds.</li>
+<li><strong>Third, the LangGraph Multi-Agent Architecture:</strong> We structure clinical reasoning as a cyclical state machine. A local, on-premise Llama-3-8B model drafts the clinical report, while an independent GPT-4o-mini Critic agent equipped with 5 deterministic Python AST safety gates audits every sentence.</li>
+<li><strong>Fourth, Quantitative GPU Ablations:</strong> Every architectural claim is proven through 5 rigorous ablations run on an NVIDIA GeForce RTX 4060 Laptop GPU, verifying chunking, embeddings, hybrid retrieval, context window size, and causal decoding temperatures."</li>
+</ol>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Why Triage Needs Exact Biomarkers):</strong></li>
+<li>When an emergency doctor decides whether to administer clot-busting medication, they cannot guess. They need to know the exact physical volume of dead tissue in cubic centimeters ($   ext{cm}^3$). If the dead core is too big, restoring blood flow will cause the fragile, dead blood vessels to burst, causing a massive, fatal brain bleed.</li>
+<li><strong>Technical / Computational Aspect (What is an HNSW Index and AST?):</strong></li>
+<li><strong>HNSW (Hierarchical Navigable Small World):</strong> A smart graph-based indexing algorithm. Imagine a vector database as a multi-floor library: HNSW allows the AI to skip across top-floor express highways to find the exact nearest book in milliseconds without reading every shelf.</li>
+<li><strong>AST (Abstract Syntax Tree):</strong> A deterministic computer science tool that parses computer code or text into a tree of structural tokens. Instead of trusting an AI's feelings, an AST strictly inspects the text like a compiler, ensuring numbers match reality to the decimal point.</li>
+</ul>
+<hr />
+<h3>SLIDE 3: Presentation Roadmap</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Presentation Roadmap — Five Architectural Parts</em></li>
+<li><strong>Roadmap Items:</strong> 1. Architecture &amp; Problem | 2. 3D Perception Layer | 3. Modular RAG | 4. LangGraph Multi-Agent | 5. Output &amp; Evaluation</li>
+<li><strong>⏱️ Estimated Time:</strong> 30 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the sequence numbers 1 through 5, highlighting that the talk moves logically from clinical necessity to computer vision, retrieval, multi-agent control, and real empirical GPU proof.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Our presentation is organized into five logical sections:<br />
+* In <strong>Part 1</strong>, we examine the clinical emergency bottlenecks and why standard Generative AI fails in medicine.<br />
+* In <strong>Part 2</strong>, we explore our 3D ACS-UNet perception model, explaining how depthwise separable convolutions and contralateral hemispheric symmetry enable edge deployment.<br />
+* In <strong>Part 3</strong>, we present our Modular RAG framework and our first three empirical ablations on chunking, biomedical embeddings, and hybrid reranking.<br />
+* In <strong>Part 4</strong>, we unpack our LangGraph cyclical state machine, dual-LLM routing, and the 5-Gate Critic self-correction loop.<br />
+* Finally, in <strong>Part 5</strong>, we examine the certified clinical report output, benchmark evaluation across ATLAS and BIOSE, and our final two ablations on context window size and decoding temperatures."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 4: Clinical Bottlenecks &amp; LLM Failure Modes</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Clinical Bottlenecks &amp; LLM Failure Modes</em></li>
+<li><strong>Cards Displayed:</strong> Left Red Card (<em>Clinical &amp; 3D Vision Bottlenecks</em>) vs. Right Blue Card (<em>Generative AI &amp; Safety Failure Modes</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> First point to the 4 bullet points on the left card (Manual planimetry, Lacunar ambiguity, Hospital VRAM ceiling, Semantic gap). Then point across to the 4 failure modes on the right card (Numerical token drift, Catastrophic triage, Guideline staleness, Zero provenance).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"To understand why NeuroAgent is necessary, we must examine the severe failure modes existing in both clinical radiology and modern Generative AI.</p>
+<p><strong>[Point to Left Card: Clinical Bottlenecks]</strong><br />
+In hospital stroke care:<br />
+1. <strong>Manual Planimetry Latency:</strong> Clinicians still estimate stroke volume using primitive geometric approximations like ABC/2 or slice-by-slice manual contouring. This takes 15 to 25 minutes per patient—a catastrophic delay when 1.9 million neurons die every minute inside the hyperacute 4.5-hour window.<br />
+2. <strong>Sub-5 cm³ Lacunar Ambiguity:</strong> Small subcortical infarcts smaller than 5 cubic centimeters account for 25% of all strokes, yet on standard T1-weighted MRI they are nearly indistinguishable from benign age-related enlarged perivascular spaces.<br />
+3. <strong>The Hospital VRAM Ceiling:</strong> Existing deep learning baselines—such as nnU-Net with 31 million parameters and Swin-UNETR with 62 million parameters—require 14 to 18 Gigabytes of GPU VRAM. Standard hospital diagnostic workstations only have 6 to 8 Gigabyte consumer GPUs, leading to immediate Out-Of-Memory system crashes.<br />
+4. <strong>The Semantic Gap:</strong> Even when a vision model runs, it outputs a raw binary NIfTI array. Clinicians do not have time to parse a tensor; they need a structured American College of Radiology report.</p>
+<p><strong>[Point to Right Card: Generative AI Safety Failure Modes]</strong><br />
+Conversely, why can't we simply plug in ChatGPT or an off-the-shelf LLM?<br />
+1. <strong>Numerical Token Drift:</strong> Autoregressive language models mutate numbers. An infarct of 80.924 cubic centimeters gets rewritten as 8.09 cubic centimeters because LLMs predict word tokens rather than understanding physical volume.<br />
+2. <strong>Catastrophic Triage Errors:</strong> If an LLM recommends intravenous thrombolysis to a patient whose stroke core exceeds 50 cubic centimeters or whose onset exceeds 4.5 hours, the patient faces fatal hemorrhagic transformation.<br />
+3. <strong>Guideline Staleness:</strong> Static LLM weights lack the 2026 AHA/ASA guidelines, STRIVE-2 small vessel disease criteria, and ESO 2024 updates.<br />
+4. <strong>Zero Provenance:</strong> Standard LLMs write fluent, plausible-sounding medical prose that lacks bracketed, verifiable citations back to medical literature, making peer review impossible."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Hemorrhagic Transformation &amp; ABC/2):</strong></li>
+<li><strong>ABC/2 Formula:</strong> A crude clinical formula where a doctor measures the maximum length ($A$), width ($B$), and number of slices ($C$) of a stroke on a CT/MRI scan, assuming the stroke is a perfect sphere or ellipsoid. In reality, strokes have complex, irregular, branching shapes.</li>
+<li><strong>Hemorrhagic Transformation:</strong> When brain tissue dies from ischemia, the tiny capillaries inside the dead zone also die and their structural walls dissolve. If a powerful clot-dissolving drug (IV-rtPA) is administered too late (after 4.5 hours) or into a massive dead zone ($&gt;50 ext{ cm}^3$), the suddenly restored blood pressure bursts the dead capillary walls, causing catastrophic bleeding directly into the brain tissue.</li>
+<li><strong>Technical / Computational Aspect (What is Numerical Token Drift &amp; NIfTI?):</strong></li>
+<li><strong>Token Drift:</strong> LLMs do not see numbers as whole mathematical quantities. The number <code>80.924</code> is broken into tokens: <code>80</code>, <code>.</code>, and <code>924</code>. During text generation, sampling randomness can easily cause the model to output <code>8.09</code>, accidentally shrinking the reported stroke size by a factor of 10!</li>
+<li><strong>NIfTI Format (<code>.nii.gz</code>):</strong> The standard medical file format for neuroimaging. Unlike a 2D JPEG photo, a NIfTI file is a 3-dimensional grid of voxels containing spatial header information (voxel spacing in millimeters, spatial orientation, and coordinate matrices).</li>
+</ul>
+<hr />
+<h3>SLIDE 5: End-to-End Neuro-Symbolic &amp; Agentic System (Architecture Diagram)</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>End-to-End Neuro-Symbolic &amp; Agentic System</em></li>
+<li><strong>Metrics Displayed:</strong> <code>309k</code> ACS-UNet params | <code>768-d</code> PubMedBERT embeddings | <code>&lt;15 ms</code> top-3 retrieval | <code>≤2</code> critic iterations</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the overarching pipeline: input NIfTI and free-text history entering on the left, passing through the 3D Perception and Modular RAG engines, entering the LangGraph state machine, and exiting as a certified clinical report on the right.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 5 illustrates our complete end-to-end neuro-symbolic architecture.</p>
+<p>On the left, our system accepts two raw hospital inputs: the patient's 3D T1-weighted structural MRI scan in NIfTI format, and the emergency clinician's free-text clinical history notes.</p>
+<p>The processing flows through two coordinated subsystems:<br />
+* <strong>The Neural Perception Subsystem:</strong> Our 309,000-parameter ACS-UNet segments the 3D scan in 146 milliseconds. A deterministic tensor module extracts exact physical biomarkers: volume in cubic centimeters, voxel count, laterality, and ASPECTS score. Simultaneously, our Clinical History Parser extracts onset hours and contraindication flags.<br />
+* <strong>The Symbolic &amp; Knowledge Subsystem:</strong> These exact biomarkers dynamically formulate a targeted clinical query. Our 4-stage Modular RAG pipeline searches ChromaDB across 13 stroke guidelines using PubMedBERT embeddings, retrieving relevant guideline passages in under 15 milliseconds.<br />
+* <strong>The LangGraph Agentic Loop:</strong> The biomarkers and retrieved passages enter a typed state machine. Our on-premise Llama-3-8B Drafter synthesizes the report, which is audited by our GPT-4o-mini Critic. If any safety invariant fails, the state machine routes the report back for revision, converging in 2 or fewer iterations to produce a certified, auditable clinical document."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Why Both Scan and History Are Needed):</strong></li>
+<li>An MRI scan alone cannot tell you <em>when</em> the stroke started. A patient could have a small $10   ext{ cm}^3$ stroke, but if it happened 3 days ago, clot-busting medication is useless and dangerous. Conversely, knowing a patient has arm weakness does not reveal if they have a small vessel blockage or a massive arterial occlusion. Safe medical decisions require marrying physical anatomy from the scan with temporal history from the patient.</li>
+<li><strong>Technical / Computational Aspect (What Does 'Neuro-Symbolic' Mean?):</strong></li>
+<li><strong>Neuro:</strong> Refers to deep neural networks (ACS-UNet, Transformers, LLMs). Neural nets excel at fuzzy perception, pattern recognition, and fluent writing, but they are prone to hallucinations.</li>
+<li><strong>Symbolic:</strong> Refers to classical, deterministic rules (boolean logic, regular expressions, mathematical constraints). Symbolic systems cannot hallucinate: $2 + 2$ is always $4$.</li>
+<li><strong>Neuro-Symbolic AI:</strong> The fusion of both. Neural networks do the heavy lifting of image perception and text drafting, while symbolic rules lock down the numbers, clinical thresholds, and safety gates.</li>
+</ul>
+<hr />
+<h3>SLIDE 6: Four-Stage System Walkthrough</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Four-Stage System Walkthrough</em></li>
+<li><strong>Sections Displayed:</strong> Stages 1 &amp; 2: Perception &amp; RAG | Stages 3 &amp; 4: LangGraph &amp; 5-Gate Critic</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Walk through the four numbered stages in order: 1 (Segmentation), 2 (History Parsing &amp; RAG), 3 (LangGraph Orchestration), 4 (Critic Audit &amp; Certification).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 6 provides a step-by-step walkthrough of how data transforms through our four stages:</p>
+<ul>
+<li><strong>In Stage 1 (Perception):</strong> The patient's 3D NIfTI scan is normalized and fed into ACS-UNet. The model outputs a voxel-level segmentation mask, which is converted into physical volume ($V_{  ext{cm}^3}$), hemispheric asymmetry ($\Delta_{  ext{sym}}$), and an automated 10-point ASPECTS score.</li>
+<li><strong>In Stage 2 (Knowledge Retrieval):</strong> Our Clinical History Parser extracts the exact symptom onset duration ($t_{   ext{onset}}$) and scans for contraindications such as active anticoagulation. These parameters compile a dynamic clinical query, and our hybrid retrieval engine fetches the top-3 guideline chunks from ChromaDB.</li>
+<li><strong>In Stage 3 (LangGraph Synthesis):</strong> The state machine loads all biomarkers and guideline evidence into a typed <code>AgentState</code>. Our local Llama-3-8B Drafter agent writes a complete American College of Radiology structured report, embedding bracketed numbered citations <code>[1]</code> through <code>[6]</code> for every statement.</li>
+<li><strong>In Stage 4 (Verification &amp; Certification):</strong> Our independent Critic Agent runs 5 deterministic AST and regex verification gates. If any number, laterality, or guideline rule is violated, the report is routed back to the Drafter with an explicit error trace. Once all gates pass, the report is certified for the medical record."</li>
+</ul>
+</blockquote>
+<hr />
+<h2>PART 2: 3D PERCEPTION LAYER &amp; BIOMARKER EXTRACTION (SLIDES 7 – 10)</h2>
+<hr />
+<h3>SLIDE 7: ACS-UNet — Segmentation Results &amp; Efficiency</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>ACS-UNet: Segmentation Results &amp; Efficiency</em></li>
+<li><strong>Metrics Displayed:</strong> <code>309,387</code> parameters | <code>61.91%</code> 5-Fold Mean Dice | <code>146 ms</code> inference time | <code>4.2 GB</code> VRAM</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the 3D volume rendering and coronal slice showing the ground truth red mask vs. the predicted green mask. Direct attention to the parameter count (309k) and the VRAM gauge (4.2 GB).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"In Part 2, we dive into our 3D vision foundation: <strong>ACS-UNet</strong>.</p>
+<p>On Slide 7, we present our model's core segmentation performance and resource footprint. ACS-UNet contains exactly <strong>309,387 parameters</strong>.</p>
+<p>When evaluated across the multi-center <strong>ATLAS v3.0</strong> cohort of 1,453 chronic and acute stroke patients using rigorous 5-fold cross-validation, ACS-UNet achieves a <strong>61.91% 5-fold mean Dice similarity coefficient</strong>.</p>
+<p>But what is truly game-changing for clinical deployment is our computational efficiency: the entire 3D volume inference executes in <strong>146 milliseconds</strong> while consuming only <strong>4.2 Gigabytes of GPU VRAM</strong>. This means our 3D perception engine runs comfortably on standard hospital workstation GPUs, such as our NVIDIA GeForce RTX 4060, completely bypassing the memory bottlenecks of existing academic baselines."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (What is a 3D MRI Voxel &amp; What Does Dice Measure?):</strong></li>
+<li>A 2D digital photo is made of flat squares called <strong>pixels</strong>. A 3D MRI brain scan is composed of tiny 3D cubes called <strong>voxels</strong> (volume elements). In our scans, each voxel represents exactly $1  imes 1  imes 1  ext{ mm}^3$ of physical human brain tissue.</li>
+<li>The <strong>Dice Similarity Coefficient</strong> measures how accurately the AI identifies the boundaries of the dead brain tissue. Imagine an expert neuroradiologist draws the exact boundaries of a stroke in red, and the AI draws its prediction in green. Dice measures the percentage of physical overlap between the two shapes. In 3D medical stroke imaging, lesions are extremely irregular, fuzzy, and variable, making a 61.91% Dice score on the challenging ATLAS v3.0 benchmark highly competitive with state-of-the-art models that are 100 times larger.</li>
+<li><strong>Technical / Computational Aspect (What is VRAM and Why Does 4.2 GB Matter?):</strong></li>
+<li><strong>VRAM (Video Random Access Memory):</strong> The ultra-fast memory located directly on the graphics card (GPU). When processing large 3D neural networks, the entire 3D image tensor and all intermediate neural activations must reside inside VRAM.</li>
+<li>If a model requires 16 GB of VRAM and the hospital computer only has an 8 GB GPU, the computer throws a fatal <code>CUDA Out of Memory</code> error and halts completely. By requiring only 4.2 GB, ACS-UNet leaves half the GPU memory free to run our language model and retrieval engines simultaneously on the same machine!</li>
+</ul>
+<hr />
+<h3>SLIDE 8: ACS-UNet — Attention, Symmetry &amp; Efficiency</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>ACS-UNet: Attention, Symmetry &amp; Efficiency</em></li>
+<li><strong>Cards Displayed:</strong> 1. Depthwise Separable 3D Convolutions | 2. Contralateral Symmetry ($\Delta_{    ext{sym}}$) | 3. Why Not nnU-Net / Swin-UNETR? | 4. Performance on ATLAS v3.0</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Walk through the 4 numbered cards: explain the mathematical factorization in Card 1, the anatomical mirror subtraction in Card 2, contrast against the memory hogs in Card 3, and summarize the small-lesion Dice boost in Card 4.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"How does a model with only 309,000 parameters compete with models containing tens of millions of weights? Slide 8 explains the two architectural breakthroughs inside ACS-UNet:</p>
+<ol>
+<li><strong>Depthwise Separable 3D Convolutions:</strong> Standard 3D convolutions simultaneously mix spatial coordinates ($X, Y, Z$) and channel features ($C$), leading to cubic parameter growth. We factorize each standard $3  imes 3  imes 3$ convolution into a depthwise spatial convolution followed by a $1   imes 1  imes 1$ pointwise channel projection. This slashes parameter count and computational FLOPs by over 90% without sacrificing spatial receptive fields.</li>
+<li><strong>Contralateral Hemispheric Symmetry ($\Delta_{    ext{sym}}$):</strong> The human brain exhibits natural bilateral symmetry across the mid-sagittal plane. Ischemic strokes, however, are almost exclusively unilateral. We exploit this biological prior by taking the encoder feature map $F_{ ext{enc}}(X)$, flipping it across the left-right axis, and computing the absolute feature difference: $|F_{ ext{enc}}(X) -  ext{Flip}<em>{LR}(F</em>{  ext{enc}}(X))|$. This instantly illuminates acute tissue asymmetry, giving the network a massive inductive bias.</li>
+<li><strong>Why NOT nnU-Net or Swin-UNETR?</strong> Standard baselines like nnU-Net (31.2 million parameters) and Swin-UNETR (62.2 million parameters) are brute-force architectures requiring 14.6 to 18.4 GB of VRAM. More importantly, they treat brain MRI as generic 3D voxels, lacking any neurological symmetry priors.</li>
+<li><strong>Empirical Impact on ATLAS v3.0:</strong> On our 1,453-patient cohort, incorporating this contralateral symmetry prior yields a <strong>+16.3% Dice improvement on difficult small subcortical lesions</strong> under 5 cubic centimeters, while operating at 146 milliseconds."</li>
+</ol>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Bilateral Brain Symmetry &amp; Unilateral Strokes):</strong></li>
+<li>If you look down at a human brain, the left hemisphere and right hemisphere are anatomical mirror images of each other. While humans have minor functional differences (like language usually on the left), the physical layout of blood vessels and brain matter is symmetrical across the central mid-sagittal fissure.</li>
+<li>When a stroke occurs, a blood clot almost never blocks both sides of the brain at once; it blocks an artery on the left OR on the right. By mathematically subtracting the left side of the brain from the right side, healthy brain structures cancel out to zero, while the fresh stroke lights up like a beacon!</li>
+<li><strong>Technical / Computational Aspect (Depthwise Separable 3D Convolutions):</strong></li>
+<li>Imagine you are filtering coffee. A standard 3D convolution tries to grind the coffee beans and heat the water in a single massive, complex machine ($3     imes 3  imes 3  imes C_{    ext{in}}    imes C_{    ext{out}}$ multiplications).</li>
+<li>A <strong>depthwise separable convolution</strong> splits the task into two simple steps: first, it filters each spatial slice independently (depthwise), and then it mixes the flavors using a simple $1    imes 1  imes 1$ operation (pointwise). This produces virtually the exact same mathematical output while requiring 100 times fewer internal weights!</li>
+</ul>
+<hr />
+<h3>SLIDE 9: Volumetric Biomarker Extraction</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Volumetric Biomarker Extraction</em></li>
+<li><strong>Metrics Displayed:</strong> <code>80.924 cm³</code> lesion volume (80,924 voxels) | <code>2 / 10</code> estimated ASPECTS | <code>0.0884</code> $\Delta_{   ext{sym}}$, Right MCA | <code>0.000 cm³</code> Healthy control</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the red segmented stroke volume card ($80.924 ext{ cm}^3$), then to the low ASPECTS score ($2/10$), and contrast with the green Healthy Control card at the bottom displaying exactly $0.000  ext{ cm}^3$ and ASPECTS $10/10$.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 9 demonstrates how our perception engine bridges computer vision into clinical reality. Once ACS-UNet generates the voxel probability map, our deterministic pipeline extracts four crucial clinical biomarkers:</p>
+<ul>
+<li><strong>First, Infarct Burden:</strong> For this severe acute stroke patient, the segmented lesion measures <strong>80.924 cubic centimeters</strong>, corresponding to exactly <strong>80,924 positive voxels</strong> at $1  ext{ mm}^3$ resolution.</li>
+<li><strong>Second, Topographic ASPECTS Score:</strong> The model automatically maps the lesion against 10 critical anatomic Middle Cerebral Artery regions, estimating an ASPECTS score of <strong>2 out of 10</strong>.</li>
+<li><strong>Third, Neuroanatomical Lateralization:</strong> The model calculates a contralateral asymmetry index ($\Delta_{  ext{sym}}$) of <strong>0.0884</strong>, localizing the lesion unambiguously to the <strong>Right Cerebral Hemisphere in the MCA territory</strong>.</li>
+<li><strong>Fourth, Healthy Control Verification:</strong> Crucially, when we feed an entirely normal brain scan from a healthy control subject into our pipeline, the model outputs exactly <strong>0.000 cubic centimeters</strong> (0 voxels) and an ASPECTS score of <strong>10 out of 10</strong>, demonstrating <strong>100% specificity</strong> with zero false-positive hallucinations."</li>
+</ul>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (What is ASPECTS and Why is 2/10 Alarming?):</strong></li>
+<li><strong>ASPECTS (Alberta Stroke Programme Early CT Score):</strong> A 10-point quantitative anatomical scoring system used worldwide by stroke neurologists. The brain's Middle Cerebral Artery (MCA) territory is divided into 10 key anatomical zones: 6 cortical areas (M1 through M6) and 4 deep subcortical structures (caudate nucleus, lentiform nucleus, internal capsule, and insular ribbon).</li>
+<li>A normal, healthy brain receives a perfect score of <strong>10/10</strong>. For every zone that has died from stroke, 1 point is subtracted.</li>
+<li>A score of <strong>2/10</strong> is an emergency alert: it means <strong>8 out of the 10 vital brain regions are already irreversibly destroyed</strong>! The patient has a massive territorial stroke and is at severe risk of malignant cerebral edema and brain herniation.</li>
+<li><strong>Technical / Computational Aspect (Why 100% Specificity on Healthy Controls Matters):</strong></li>
+<li>Many commercial medical AI models suffer from "over-calling": they see tiny dark spots or scanner noise on a normal patient's MRI and falsely label it as an acute stroke. If an AI tells an emergency doctor that a healthy patient had a stroke, the patient might be given unnecessary, high-risk blood thinners. Proving our model outputs exactly <code>0.000 cm³</code> on healthy controls is essential for clinical trust.</li>
+</ul>
+<hr />
+<h3>SLIDE 10: From Tensor to Biomarker to Safety Bridge</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>From Tensor to Biomarker to Safety Bridge</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>3D Tensor-to-Biomarker Extraction</em>) vs. Right Card (<em>Neuro-Symbolic Safety Bridge</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the integration equation on the left card ($V_{   ext{cm}^3} = \sum I(P_{ ext{ens}} &gt; 0.5) \dots$). Then trace across to the right card showing the boolean logic equation: $ ext{ivt_eligible} = (0 &lt; V &lt; 50    ext{ cm}^3) \land (t_{  ext{onset}} \le 4.5 ext{h}) \land (<br />
+eg  ext{Contraindicated})$.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 10 details our architectural safety bridge. How do we ensure that raw neural network predictions safely guide medical decisions without allowing a language model to invent numbers?</p>
+<p><strong>[Point to Left Card: Tensor-to-Biomarker Extraction]</strong><br />
+First, our pipeline calculates exact physical volume through discrete mathematical integration over the ensemble probability map $P_{ ext{ens}}$:<br />
+$$V_{ ext{cm}^3} = \sum_{x,y,z} \mathbb{I}(P_{    ext{ens}}(x,y,z) &gt; 0.5)     imes rac{\Delta x \cdot \Delta y \cdot \Delta z}{1000}$$<br />
+Here, each voxel's spatial dimensions ($1     imes 1  imes 1  ext{ mm}^3$) are summed and converted to cubic centimeters. This gives us an exact, reproducible ground truth: 80.924 cubic centimeters.</p>
+<p><strong>[Point to Right Card: Neuro-Symbolic Safety Bridge]</strong><br />
+Second, our system constructs a hard deterministic safety bridge:<br />
+1. Our <code>ClinicalHistoryParser</code> applies deterministic regular expressions to extract symptom onset time ($t_{  ext{onset}}$) and flags clinical contraindications like active anticoagulant medications (e.g., Warfarin or Eliquis).<br />
+2. Then, before any Large Language Model is called, a pure Python function evaluates the official AHA/ASA and ESO reperfusion invariant:<br />
+$$    ext{ivt_eligible} = (0 &lt; V &lt; 50.0  ext{ cm}^3) \land (t_{  ext{onset}} \le 4.5 ext{ hours}) \land (<br />
+eg  ext{HasClinicalContraindications})$$<br />
+3. These boolean decisions and exact numbers are stored in a structured JSON state object. The language model is <strong>never permitted to perform mathematical calculations or make unconstrained medical decisions</strong>. It receives verified facts as immutable symbolic constraints."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Why the 50 cm³ and 4.5h Rules Exist):</strong></li>
+<li>When an artery is blocked, brain cells die in two zones: the dead central <strong>core</strong> and the surrounding, struggling <strong>penumbra</strong>.</li>
+<li>If the dead core exceeds <strong>50 cubic centimeters</strong>, the damage is so extensive that the blood vessel walls have begun to decompose. If a doctor injects intravenous clot-busting medication (IV-rtPA), the sudden rush of high-pressure blood will blow out the dead capillary walls, causing fatal bleeding inside the skull. The exact same risk occurs if more than <strong>4.5 hours</strong> have passed since symptoms began.</li>
+<li><strong>Technical / Computational Aspect (Why We Don't Let LLMs Do Math):</strong></li>
+<li>Large Language Models are probabilistic text completion engines; they predict the next most likely token. When an LLM sees <code>80.924 &gt; 50.0</code>, it does not perform a mathematical comparison on a CPU register; it simply guesses what words typically follow. Allowing an LLM to evaluate medical safety rules results in catastrophic failures. By evaluating the logic in pure Python code before the LLM is invoked, we achieve 100% mathematical determinism.</li>
+</ul>
+<hr />
+<h2>PART 3: DOMAIN-SPECIFIC MODULAR RAG &amp; RETRIEVAL ABLATIONS (SLIDES 11 – 20)</h2>
+<hr />
+<h3>SLIDE 11: Non-Parametric Memory (RAG) vs. Fine-Tuning</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Non-Parametric Memory (RAG) vs. Fine-Tuning</em></li>
+<li><strong>Slide Theme:</strong> Conceptual comparison between static model weights and external vector knowledge retrieval.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the left branch showing the closed-box Fine-Tuned Model (static parametric weights) vs. the right branch showing Retrieval-Augmented Generation (dynamic, external knowledge store).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Now, let us transition to Part 3: our <strong>Domain-Specific Modular RAG Knowledge Architecture</strong>.</p>
+<p>In the Generative AI community, there is a constant debate: when building a specialized domain system, should you fine-tune the model's internal weights via supervised instruction tuning (SFT) or LoRA, or should you deploy Retrieval-Augmented Generation (RAG)?</p>
+<p>On Slide 11, we illustrate this fundamental architectural divide. In acute medical healthcare—and especially in stroke neurology—we assert that <strong>fine-tuning static weights is an unacceptable clinical liability</strong>, and that non-parametric external memory through RAG is mathematically and clinically superior. Let us examine the exact theory why."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 12: Why RAG Beats Parametric Fine-Tuning</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Why RAG Beats Parametric Fine-Tuning</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Non-Parametric Generation [RAG]</em>) vs. Right Card (<em>Why SFT / LoRA Fails Here</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the mathematical marginalization formula on the left card ($P(y|x) pprox \prod \dots$). Then highlight the three failure modes on the right card: Catastrophic Forgetting, Dosage Drift, and Lack of Auditability.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 12 provides the formal mathematical and clinical justification for why RAG fundamentally outperforms parametric fine-tuning:</p>
+<p><strong>[Point to Left Card: Non-Parametric Generation]</strong><br />
+Formally, RAG models the probability of generating clinical token sequence $y$ given patient input $x$ by marginalizing over a set of top-$K$ retrieved evidence passages $z$:<br />
+$$P(y|x) pprox \prod_{t=1}^T \sum_{z \in     ext{Top-K}} P_{ ext{ret}}(z|x) \cdot P_ heta(y_t \mid x, z, y_{&lt;t})$$<br />
+This formulation delivers three decisive clinical advantages:<br />
+1. <strong>Zero-Latency Extensibility:</strong> When the American Heart Association publishes an updated guideline (such as the 2026 Prabhakaran guideline) or Radiopaedia publishes an ASPECTS update, we index the new PDF into ChromaDB in seconds without training a single neural weight or spending thousands of dollars on GPU clusters.<br />
+2. <strong>Explicit Lineage and Provenance:</strong> Because $z$ is explicitly retrieved from disk, every medical statement in the report can be tied directly to a specific PDF document and page number.</p>
+<p><strong>[Point to Right Card: Why SFT / LoRA Fails Here]</strong><br />
+Conversely, fine-tuning introduces three catastrophic clinical risks:<br />
+1. <strong>Catastrophic Forgetting:</strong> Supervised fine-tuning overwrites the general medical reasoning and linguistic syntax learned during pre-training.<br />
+2. <strong>Dosage and Threshold Drift:</strong> Parametric weights store knowledge as diffuse floating-point numbers across billions of connections. When fine-tuned on multiple papers, the model conflates different drug regimens—such as confusing the 0.9 mg/kg dose of Alteplase with the 0.25 mg/kg dose of Tenecteplase, or blending the 4.5-hour IVT window with the 24-hour thrombectomy window.<br />
+3. <strong>Non-Auditability:</strong> A fine-tuned neural network cannot tell a radiologist which page of which guideline it read to make its recommendation, making clinical certification impossible."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Why Clinical Guidelines Keep Changing):</strong></li>
+<li>Stroke neurology moves fast. In 2015, clinical trials proved that mechanical thrombectomy worked up to 6 hours. In 2018, the DAWN and DEFUSE-3 trials proved it could work up to 24 hours in selected patients. In 2021, the ESO updated guidelines for wake-up strokes. In 2026, the AHA/ASA published new recommendations on Tenecteplase dosing.</li>
+<li>If a doctor relied on an AI model trained three years ago, the AI would be dangerously out of date! RAG allows the hospital to simply drop the latest PDF guideline into a folder, and the AI immediately adopts the new medical standard.</li>
+<li><strong>Technical / Computational Aspect (Open-Book Exam vs. Cramming from Memory):</strong></li>
+<li><strong>Fine-Tuning (Parametric Memory):</strong> Like forcing a medical student to memorize an entire medical library. They will remember general themes, but when stressed, they might mix up a decimal point or confuse two drug dosages.</li>
+<li><strong>RAG (Non-Parametric Memory):</strong> Like giving that same student an open-book exam with the exact pages of the official guidelines placed right in front of them. The student doesn't have to guess or memorize; they look at the book, read the exact sentence, and cite the page number.</li>
+</ul>
+<hr />
+<h3>SLIDE 13: 4-Stage Modular RAG vs. Naive Linear RAG</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>4-Stage Modular RAG vs. Naive Linear RAG</em></li>
+<li><strong>Slide Theme:</strong> Visual contrast between naive single-lookup RAG and NeuroAgent's 4-stage modular pipeline.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Trace the top linear flow (Naive RAG: User Query $<br />
+ightarrow$ Vector Search $<br />
+ightarrow$ LLM) and contrast it with the bottom multi-stage pipeline (Compiler $<br />
+ightarrow$ Router $<br />
+ightarrow$ Hybrid RRF $<br />
+ightarrow$ Cross-Encoder).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 13 highlights our architectural divergence from standard RAG.</p>
+<p>Most commercial applications implement <strong>Naive Linear RAG</strong>: a user types a query, a vector database performs a single cosine-similarity lookup, and the top-5 text chunks are dumped into an LLM context window.</p>
+<p>In acute medicine, Naive RAG fails catastrophically due to context contamination and semantic confusion. To solve this, we architected <strong>NeuroAgent 4-Stage Modular RAG</strong>:<br />
+1. A <strong>Clinical Query Compiler</strong> that translates raw numbers into clinical search concepts;<br />
+2. A <strong>Dynamic Tier Router</strong> that partitions guideline search space;<br />
+3. A <strong>Hybrid BM25 and PubMedBERT Retrieval Engine</strong>; and<br />
+4. A <strong>GPU Cross-Encoder Reranker</strong> that calculates joint query-passage attention. Let us examine how this functions in detail."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 14: Modular RAG Mechanics &amp; Naive RAG Failures</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Modular RAG Mechanics &amp; Naive RAG Failures</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>NeuroAgent 4-Stage Modular RAG</em>) vs. Right Card (<em>Failure Modes of Naive RAG</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the 4 stages on the left card. Then explain the two devastating clinical errors on the right card (Context Contamination and Temporal Blindness), ending on the quantitative impact statistic (cutting pre-critic drift from 14.6% to 4.2%).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 14 details the engineering mechanics of our modular pipeline:</p>
+<p><strong>[Point to Left Card: 4-Stage Modular RAG]</strong><br />
+1. <strong>Stage 1 (Query Compiler):</strong> The system does not search with a raw prompt. It compiles an optimized clinical query embedding exact physical biomarkers: for example, combining lesion volume ($80.9   ext{ cm}^3$), ASPECTS score ($2/10$), onset time ($2.0  ext{ hours}$), and patient symptoms into a structured medical query.<br />
+2. <strong>Stage 2 (Dynamic Router):</strong> Depending on the extracted lesion tier, the query is routed: if volume is $&lt; 5   ext{ cm}^3$, it routes to STRIVE-2 small vessel disease guidelines; if volume is $&gt; 15  ext{ cm}^3$, it routes to large vessel occlusion protocols; if onset is $&gt; 4.5  ext{ hours}$, it routes to DAWN/DEFUSE-3 extended endovascular guidelines.<br />
+3. <strong>Stages 3 &amp; 4 (Hybrid Search &amp; Reranking):</strong> Sparse BM25 and dense PubMedBERT retrieve an initial candidate pool of 15 chunks, which our GPU cross-encoder reranks down to the top-3 most clinically relevant passages with a Context Precision of 0.91.</p>
+<p><strong>[Point to Right Card: Failure Modes of Naive RAG]</strong><br />
+Why does Naive RAG fail without this?<br />
+1. <strong>Context Contamination:</strong> A flat vector search on a massive $80   ext{ cm}^3$ stroke will frequently retrieve chunks discussing dual-antiplatelet therapy for tiny lacunar strokes simply because both documents share words like 'stroke' and 'ischemia'. The LLM blends the two, prescribing antiplatelets instead of emergency surgery!<br />
+2. <strong>Temporal Blindness:</strong> Naive embeddings cannot discern that a 2.0-hour presentation qualifies for IV thrombolysis while a 6.0-hour presentation strictly forbids it.<br />
+3. <strong>Quantitative Impact:</strong> Our 4-stage modular pipeline slashes pre-critic clinical hallucination drift from <strong>14.6% down to 4.2%</strong> before the Critic agent is even called."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Small Lacunar Stroke vs. Massive Territorial Stroke):</strong></li>
+<li>Treating all strokes the same is like treating a paper cut the same as an amputated limb.</li>
+<li>A <strong>lacunar stroke</strong> ($&lt;5   ext{ cm}^3$) is a blockage of a tiny microscopic deep penetrating artery in the brain. It does not cause massive swelling and does not need invasive surgery; it needs blood pressure medication and aspirin (antiplatelet therapy).</li>
+<li>A <strong>large territorial stroke</strong> ($&gt;50    ext{ cm}^3$) is a complete blockage of a major trunk artery feeding half the brain. It causes massive swelling, pushes the brain across the skull (herniation), and requires immediate emergency endovascular catheter surgery. If Naive RAG mixes up these two treatments, the patient will die.</li>
+<li><strong>Technical / Computational Aspect (What is Cross-Encoder Reranking?):</strong></li>
+<li><strong>Bi-Encoder (Standard Vector Search):</strong> Encodes the search question into a vector, encodes the document into a vector separately, and measures the angle (cosine distance) between them. It is fast, but it cannot compare individual words directly.</li>
+<li><strong>Cross-Encoder:</strong> Takes the question AND the document, glues them together, and passes them through a deep Transformer neural network simultaneously. Every single word in the question directly cross-examines every single word in the document via cross-attention. It is like having a human judge read both sentences side-by-side.</li>
+</ul>
+<hr />
+<h3>SLIDE 15: Ablation 1 — Chunking Strategy &amp; Overlap (13 PDFs)</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Chunking Strategy &amp; Overlap Ablation (13 Clinical Guidelines)</em></li>
+<li><strong>Metrics Displayed:</strong> <code>100%</code> Recall@3 (1200c/150 overlap) | <code>4,678</code> Chunks (vs. 14,199 in micro-chunking) | <code>0.8%</code> Boundary integrity (Fixed 500c) | <code>1.1%</code> Boundary integrity (Recursive)</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the bar chart showing Title-Aware Chunking reaching 100% Recall@3. Contrast the 4,678 compact chunk count against the 14,199 bloated count of recursive splitting.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"On Slide 15, we present our <strong>first empirical GPU ablation study</strong>: evaluating chunking strategies across all 13 peer-reviewed clinical guidelines, executed on our RTX 4060 GPU.</p>
+<p>Many developers assume text chunking is a trivial hyperparameter. Our empirical data proves it is the single most critical determinator of retrieval success.</p>
+<p>We evaluated three distinct chunking paradigms:<br />
+1. Standard <strong>Fixed Character Chunking</strong> (500 characters, 0 overlap);<br />
+2. Standard <strong>Recursive Character Splitting</strong> (800 characters, 100 overlap); and<br />
+3. Our layout-aware <strong>Unstructured Title-Aware Chunking</strong> (1,200 characters, 150 overlap).</p>
+<p>As shown on the slide, Title-Aware Chunking achieves <strong>100% Recall@3</strong> across our stroke benchmark while generating a compact, highly efficient index of <strong>4,678 chunks</strong>.</p>
+<p>In stark contrast, Fixed Chunking achieved only <strong>0.8% syntactic boundary integrity</strong>, and Recursive Splitting achieved only <strong>1.1% integrity</strong>, while bloating the index to <strong>14,199 chunks</strong>. Let us look at why this happens."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 16: Title-Aware Chunking: Why It Wins</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Title-Aware Chunking: Why It Wins</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Unstructured chunk_by_title Mechanics</em>) vs. Right Card (<em>Why Fixed &amp; Zero-Overlap Fail</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the layout parsing elements on the left (Title, NarrativeText, ListItem, Table). Then point to the red alert on the right illustrating a severed clinical sentence.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 16 explains the mathematical and linguistic reasons behind Ablation 1:</p>
+<p><strong>[Point to Left Card: chunk_by_title Mechanics]</strong><br />
+Clinical guidelines are not flat novels; they are heavily structured legal and medical documents with nested section headers, bulleted inclusion criteria, tables, and footnotes.<br />
+We deployed <code>PyMuPDF</code> and <code>Unstructured</code> layout-aware parsing. The parser classifies visual bounding boxes into semantic categories: <code>Title</code>, <code>NarrativeText</code>, <code>ListItem</code>, and <code>Table</code>.<br />
+Our tuned hyperparameters set a maximum chunk size of 1,200 characters, trigger a new chunk after 800 characters, combine snippets under 300 characters, and maintain a 150-character overlap. This guarantees that subsection titles are permanently bound to their underlying medical rules.</p>
+<p><strong>[Point to Right Card: Why Fixed Chunking Fails]</strong><br />
+Why do fixed splitters fail so catastrophically in medicine?<br />
+1. <strong>Boundary Severing:</strong> Fixed-character splitters cut text blindly at character index 500. Over 98% of medical clauses are severed mid-sentence! A sentence reading: <em>'Intravenous alteplase is strictly contraindicated if the patient has taken oral anticoagulants within 48 hours'</em> gets split directly between <em>'contraindicated if'</em> and <em>'patient has taken'</em>. The retrieval engine retrieves the first half and concludes alteplase is safe!<br />
+2. <strong>Loss of Contextual Anchors:</strong> With zero overlap, section headers like <em>'Exclusion Criteria for Reperfusion'</em> are isolated into their own chunk, leaving the underlying bullet points orphaned with zero context.<br />
+3. <strong>BERT Token Alignment:</strong> 1,200 characters corresponds to approximately 260 words, fitting perfectly inside the 512-token context window of transformer embedding models without truncating critical clinical criteria."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 17: Biomedical vs. General Embeddings &amp; HNSW</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Biomedical vs. General Embeddings &amp; HNSW Indexing</em></li>
+<li><strong>Metrics Displayed:</strong> <code>100%</code> PubMedBERT Recall@3 | <code>0.8333</code> PubMedBERT MRR | <code>87.5%</code> MiniLM Recall@3 | <code>87.5%</code> BGE-small Recall@3</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Direct attention to the comparison table and bar chart: highlight PubMedBERT's superior 0.8333 Mean Reciprocal Rank (MRR) compared to MiniLM (0.7917) and BGE-small (0.7500).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 17 presents our <strong>second empirical GPU ablation study</strong>: benchmarking domain-specific biomedical embeddings against general-domain embedding models across all 4,836 ChromaDB chunks on our RTX 4060 GPU.</p>
+<p>We re-encoded our entire stroke knowledge base and queried across three distinct transformer architectures:<br />
+1. Domain-specific <strong>NeuML/pubmedbert-base-embeddings</strong> (768 dimensions);<br />
+2. General-domain <strong>all-MiniLM-L6-v2</strong> (384 dimensions); and<br />
+3. High-ranking general-domain <strong>BAAI/bge-small-en-v1.5</strong> (384 dimensions).</p>
+<p>As shown on the slide, <strong>PubMedBERT achieves 100.0% Recall@3</strong> and the highest <strong>Mean Reciprocal Rank of 0.8333</strong>, outperforming both MiniLM and BGE-small on domain-specific acute stroke queries."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 18: GPU Embedding Benchmark &amp; HNSW Indexing</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>GPU Embedding Benchmark &amp; HNSW Indexing</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Benchmark: 4,836 Chunks on CUDA</em>) vs. Right Card (<em>ChromaDB HNSW Graph Index</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the latency metric on the left card (7.73 ms on RTX 4060). Then point to the HNSW graph topology parameters ($M=16, efConstruction=200$) and cosine distance formula on the right card.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 18 explains why biomedical pre-training wins and how our vector graph index operates:</p>
+<p><strong>[Point to Left Card: GPU Benchmark]</strong><br />
+<em> On our RTX 4060 GPU, PubMedBERT executes dense vector encoding and query matching in only </em><em>7.73 milliseconds per query</em><em>—faster than MiniLM at 11.03 ms.<br />
+* Why does PubMedBERT beat BGE-small in clinical accuracy? General models are trained on Wikipedia, news articles, and web forums. When they encounter medical acronyms like </em><em>'ASPECTS'</em><em>, </em><em>'rt-PA'</em><em>, or </em><em>'STRIVE-2'</em>*, their sub-word tokenizers shatter them into meaningless character fragments (<code>AS</code>, <code>PEC</code>, <code>TS</code>). PubMedBERT was pre-trained on millions of peer-reviewed biomedical PubMed articles; its vocabulary recognizes stroke nomenclature as distinct, unified semantic concepts.</p>
+<p><strong>[Point to Right Card: HNSW Graph Indexing]</strong><br />
+<em> In ChromaDB, we construct a Hierarchical Navigable Small World graph index with $M = 16$ bi-directional connections per node and an exploration factor of $efConstruction = 200$. This enables nearest-neighbor traversal in $O(\log N)$ logarithmic time.<br />
+* Similarity is computed via normalized cosine distance:<br />
+$$D_{ ext{cosine}}(u, v) = 1 - rac{u \cdot v}{|u|_2 |v|_2}$$<br />
+* Top clinical guideline matches consistently achieve tight cosine distances of 0.22 to 0.28.<br />
+* Crucially, because all 4,836 embeddings and ChromaDB operate 100% locally on-device, </em><em>zero Protected Health Information (PHI) ever leaves the hospital</em>*, ensuring complete HIPAA and DPDP regulatory compliance."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 19: Retrieval Pipeline: BM25 vs. Dense vs. Reranker</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Retrieval Pipeline: BM25 vs. Dense vs. Reranker</em></li>
+<li><strong>Metrics Displayed:</strong> <code>0.8125</code> BM25 MRR | <code>0.8333</code> Dense PubMedBERT MRR | <code>0.8542</code> Hybrid RRF MRR | <code>0.9167</code> RRF + Cross-Encoder MRR</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the upward stair-step progression across the 4 stages: showing MRR climbing monotonically from 0.8125 to 0.8333 to 0.8542, and peaking at 0.9167 with the Cross-Encoder.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 19 presents our <strong>third empirical GPU ablation study</strong>: evaluating our multi-stage retrieval pipeline progression on the RTX 4060 GPU.</p>
+<p>We compared four retrieval configurations across our validated stroke question-answering benchmark:<br />
+1. Standalone <strong>Sparse BM25</strong> keyword search;<br />
+2. Standalone <strong>Dense PubMedBERT</strong> vector search;<br />
+3. <strong>Hybrid Reciprocal Rank Fusion (RRF)</strong> combining both; and<br />
+4. <strong>Hybrid RRF plus a GPU Cross-Encoder Reranker</strong>.</p>
+<p>The empirical results demonstrate a clean, monotonic performance gain at every single engineering stage:<br />
+* Sparse BM25 achieves an MRR of <strong>0.8125</strong>.<br />
+* Dense PubMedBERT improves this to <strong>0.8333</strong>.<br />
+* Hybrid RRF merges their rankings, climbing to <strong>0.8542</strong>.<br />
+* Finally, adding our GPU Cross-Encoder pushes Mean Reciprocal Rank to <strong>0.9167</strong>, achieving <strong>87.5% Recall@1</strong> and <strong>100.0% Recall@3</strong> in just <strong>51.69 milliseconds</strong>. Let us examine why this hybrid synergy is essential."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 20: Hybrid Search &amp; Cross-Encoder Reranking</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Hybrid Search &amp; Cross-Encoder Reranking</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Stage 1: BM25 + Dense RRF</em>) vs. Right Card (<em>Stage 2: Cross-Encoder Rerank</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the RRF formula on the left ($RRF(d) = \sum rac{1}{k + r(d)}$ with $k=60$). Then point to the Transformer joint attention diagram on the right (<code>[CLS] Query [SEP] Chunk</code>).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 20 explains why hybrid search and cross-encoders are biologically and computationally necessary in medicine:</p>
+<p><strong>[Point to Left Card: Stage 1 Hybrid RRF]</strong><br />
+<em> Medical queries have a dual nature: they contain exact numerical drug dosages ('0.9 mg/kg', 'ASPECTS 6') which require lexical precision, and complex conceptual symptoms ('facial droop', 'wake-up stroke') which require semantic understanding.<br />
+* Sparse BM25 excels at finding exact keywords like '0.9 mg/kg', but fails on synonyms. Dense PubMedBERT understands medical concepts, but struggles with exact numerical thresholds.<br />
+* We merge both rankings using </em><em>Reciprocal Rank Fusion (RRF)</em>* with smoothing constant $k = 60$:<br />
+$$RRF_Score(d) = \sum_{m \in {  ext{BM25},  ext{Dense}}} rac{1}{60 + r_m(d)}$$<br />
+This generates a diverse, high-recall candidate pool of the top 15 candidate passages.</p>
+<p><strong>[Point to Right Card: Stage 2 Cross-Encoder]</strong><br />
+<em> In Stage 2, our GPU passes the candidate pool through <code>cross-encoder/ms-marco-MiniLM-L-6-v2</code>.<br />
+* Unlike bi-encoders that encode query and document in isolation, the cross-encoder concatenates both into a single sequence: <code>[CLS] Query [SEP] Passage [EOS]</code>. Every layer of self-attention directly compares every query word against every passage word.<br />
+* This achieves an extraordinary </em><em>82.5% clinical concept recall</em>* across complex multi-guideline questions in only 51 milliseconds, completely eliminating irrelevant candidate chunks."</p>
+</blockquote>
+<hr />
+<h2>PART 4: LANGGRAPH MULTI-AGENT ARCHITECTURE &amp; DUAL-LLM ROUTING (SLIDES 21 – 28)</h2>
+<hr />
+<h3>SLIDE 21: LangGraph StateGraph &amp; Cyclic Routing</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>LangGraph StateGraph &amp; Cyclic Routing</em></li>
+<li><strong>Slide Theme:</strong> State machine graph visualization showing circular routing between Drafter and Critic nodes.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Trace the state path: START $<br />
+ightarrow$ Triage Agent $<br />
+ightarrow$ Librarian Agent $<br />
+ightarrow$ Drafter Agent $<br />
+ightarrow$ Critic Agent. Emphasize the circular red loop that routes backwards from Critic to Drafter if validation fails.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"We now enter Part 4: our <strong>LangGraph Multi-Agent Orchestration Architecture</strong>.</p>
+<p>On Slide 21, we visualize our central control architecture: a cyclical state machine built on LangGraph's <code>StateGraph</code>.</p>
+<p>In production clinical AI, you cannot treat an LLM as a one-way conveyor belt. If an LLM generates a clinical report that accidentally drops a decimal point or recommends clot-busting medication to a patient on blood thinners, a linear pipeline will simply print the fatal error into the patient's medical record.</p>
+<p>In our architecture, the clinical draft is not the final word. It enters an adversarial closed-loop state machine where an independent Critic agent inspects the document against formal medical invariants. If any gate fails, the state machine halts certification, injects an explicit error trace into the shared state, and routes the report back to the Drafter for targeted surgical repair."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 22: State Machine Design &amp; Why LangGraph</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>State Machine Design &amp; Why LangGraph</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>LangGraph State Machine Design</em>) vs. Right Card (<em>Why Not Chains or One Prompt?</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the typed state dictionary structure on the left card (<code>biomarkers</code>, <code>evidence_chunks</code>, <code>draft_report</code>, <code>error_trace</code>). Then contrast with the failure modes on the right card (Linear DAG collapse and Monolithic prompt drift).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 22 details the formal state machine design and why standard agent frameworks fail:</p>
+<p><strong>[Point to Left Card: State Machine Design]</strong><br />
+* We define a strictly typed schema: <code>AgentState</code>. This state object carries immutable 3D biomarkers, parsed clinical history flags, retrieved guideline chunks, the current draft report, and an active error trace.<br />
+* Every agent in our graph is implemented as an isolated, pure state-transition function:<br />
+$$f_i:    ext{AgentState} \longrightarrow \Delta  ext{AgentState}$$<br />
+* Nodes never call each other directly; they only mutate designated keys in <code>AgentState</code>.<br />
+* The exit edge from the Critic Agent is a conditional branch: if <code>audit_passed</code> is True, it routes to <code>END</code> for physician signature. If False, it routes back to <code>Drafter</code> with the exact violation trace.</p>
+<p><strong>[Point to Right Card: Why Not Chains or Mega-Prompts?]</strong><br />
+<em> </em><em>Why not linear DAGs (like LangChain chains)?</em><em> Directed Acyclic Graphs cannot loop. If a linear chain makes a mistake on dosage or onset time, it has no computational mechanism to step backward and correct itself.<br />
+* </em><em>Why not a single monolithic prompt?</em><em> Trying to tell a single LLM to segment an image, parse history, remember 13 guidelines, check dosages, and write a report causes catastrophic prompt dilution and instruction forgetting—resulting in a </em><em>28.4% clinical error rate</em><em>.<br />
+* </em><em>Guaranteed Termination:</em><em> To prevent infinite loops, we enforce a strict bound: $ ext{max_reflections} \le 2$. If a draft fails twice, a deterministic Python AST fallback rule enforces safety overrides, guaranteeing </em><em>100% finite convergence</em>*."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Attending Physician &amp; Resident Doctor Analogy):</strong></li>
+<li>In a hospital, a medical resident (trainee doctor) never sends a radiology report directly to the patient's chart. The resident writes a preliminary draft. Then, the senior Attending Neuroradiologist reviews it.</li>
+<li>If the resident accidentally missed a subtle bleed or wrote the wrong stroke side, the Attending rejects the draft, marks the error in red pen, and tells the resident: <em>"Fix paragraph 3; the lesion is in the right hemisphere, not the left."</em> The resident fixes that exact sentence and brings it back. LangGraph replicates this exact hospital safety hierarchy in software.</li>
+<li><strong>Technical / Computational Aspect (What is a Stateful State Machine vs. Linear DAG?):</strong></li>
+<li><strong>Linear DAG (Directed Acyclic Graph):</strong> Like a factory conveyor belt moving in only one direction. If a product has a defect at Step 4, it falls off the end of the belt broken.</li>
+<li><strong>State Machine (LangGraph):</strong> Like a smart assembly station with a quality inspector. The inspector checks the product; if defective, a robotic arm swings it back to Step 3 with a sticky note explaining the defect, repairs it, and inspects it again before boxing it.</li>
+</ul>
+<hr />
+<h3>SLIDE 23: The 4 Specialized NeuroAgents</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>The 4 Specialized NeuroAgents</em></li>
+<li><strong>Slide Theme:</strong> Visual card deck showcasing the 4 distinct agent personas: Triage, Librarian, Drafter, and Critic.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to each agent card in sequence: Agent 1 (Triage / Vision), Agent 2 (Librarian / Knowledge), Agent 3 (Drafter / Synthesis), and Agent 4 (Critic / Safety Audit).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 23 introduces the four specialized digital clinicians that constitute NeuroAgent:</p>
+<ol>
+<li><strong>Agent 1: The Triage Agent:</strong> Combines our 3D ACS-UNet perception model with our regex clinical history parser, acting as the emergency room frontline diagnostician.</li>
+<li><strong>Agent 2: The Librarian Agent:</strong> Oversees semantic and lexical knowledge retrieval across our ChromaDB guideline vector store, acting as the institutional medical reference librarian.</li>
+<li><strong>Agent 3: The Drafter Agent:</strong> A local, on-premise Large Language Model that synthesizes multimodal inputs into standardized American College of Radiology clinical reports.</li>
+<li><strong>Agent 4: The Critic Agent:</strong> A rigorous, adversarial auditor combining an independent LLM with deterministic Python Abstract Syntax Tree rules to certify safety."</li>
+</ol>
+</blockquote>
+<hr />
+<h3>SLIDE 24: Node-Level Specification</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Node-Level Specification</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Nodes 1 &amp; 2: Triage &amp; Librarian</em>) vs. Right Card (<em>Nodes 3 &amp; 4: Drafter &amp; Critic</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the exact data mutations on the left: how Triage populates <code>state['biomarkers']</code> and Librarian populates <code>state['evidence_chunks']</code>. Then point to the right showing how Drafter mutates <code>state['draft_report']</code> and Critic populates <code>state['error_trace']</code>.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 24 provides the exact software specification for each node:</p>
+<p><strong>[Point to Left Card: Nodes 1 &amp; 2]</strong><br />
+<em> </em><em>Node 1 (Triage Agent):</em><em> Executes 5-fold ACS-UNet inference on the patient's 3D NIfTI scan and runs <code>ClinicalHistoryParser</code> on the doctor's clinical notes. It computes the deterministic boolean flags <code>ivt_eligible</code> and <code>evt_eligible</code>, writing the complete biomarker schema into <code>state['biomarkers']</code>.<br />
+* </em><em>Node 2 (Librarian Agent):</em>* Takes the computed lesion tier and onset time, constructs the compiled clinical query, executes hybrid BM25 + PubMedBERT RRF retrieval, runs the cross-encoder reranker, and stores the top-3 validated guideline excerpts in <code>state['evidence_chunks']</code>.</p>
+<p><strong>[Point to Right Card: Nodes 3 &amp; 4]</strong><br />
+<em> </em><em>Node 3 (Drafter Agent):</em><em> Runs our local Llama-3-8B model at greedy temperature $T = 0.0$. It synthesizes the standard American College of Radiology report sections—Technique, Findings, Impression, and Recommendations—embedding bracketed numbered citations <code>[1]</code> through <code>[6]</code>.<br />
+* </em><em>Node 4 (Critic Agent):</em>* Executes our independent GPT-4o-mini auditor and runs 5 deterministic AST regex gates. If any gate fails, it sets <code>audit_passed = False</code>, appends the exact violation string to <code>state['error_trace']</code>, and routes back to Node 3. If all pass, it stamps <code>audit_passed = True</code> and terminates."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 25: Heterogeneous Dual-LLM Routing</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Heterogeneous Dual-LLM Routing Architecture</em></li>
+<li><strong>Slide Theme:</strong> Architectural schematic contrasting the local edge deployment of Llama-3-8B with the cloud-based verification of GPT-4o-mini.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the left blue box labeled <em>Local Edge Device (Hospital Workstation)</em> containing ACS-UNet and Llama-3-8B. Contrast it with the right purple box labeled <em>Secure Cloud Verification Layer</em> containing GPT-4o-mini.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 25 illustrates our <strong>Heterogeneous Dual-LLM Routing Architecture</strong>.</p>
+<p>In production healthcare AI, relying on a single Large Language Model creates a critical systemic failure mode known as <strong>self-preference bias</strong>. If a language model drafts a clinical report containing an error, and you ask that same model: <em>'Is this report medically safe?'</em>, it will almost always agree with itself because it shares the same internal weight biases and blind spots.</p>
+<p>To eliminate this, NeuroAgent splits drafting and auditing across two completely different model families running in two isolated environments: an on-premise local Llama-3-8B Drafter, and an independent cloud GPT-4o-mini Critic. Let us examine the clinical and privacy rationale."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 26: Llama-3-8B Drafter + GPT-4o-mini Critic</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Llama-3-8B Drafter + GPT-4o-mini Critic</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Why Local Llama-3-8B [Ollama]?</em>) vs. Right Card (<em>Why GPT-4o-mini + AST as Critic?</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the VRAM and privacy bullets on the left (4-bit GGUF, 4.7 GB VRAM, Zero PHI leakage). Then point to the adversarial audit and latency bullets on the right (No self-preference bias, &lt;450 ms audit, 0.0% final drift).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 26 explains the technical, clinical, and regulatory justification for our dual-LLM split:</p>
+<p><strong>[Point to Left Card: Local Llama-3-8B]</strong><br />
+1. <strong>Hospital Edge Efficiency:</strong> By running Llama-3-8B-Instruct via Ollama in 4-bit quantized GGUF format, the model consumes only <strong>4.7 Gigabytes of VRAM</strong>. Paired with ACS-UNet (4.2 GB), both vision and language models fit comfortably on an 8 GB or 16 GB hospital workstation GPU.<br />
+2. <strong>Absolute Patient Privacy (Zero PHI Egress):</strong> Medical data privacy laws—including HIPAA in the US and the Digital Personal Data Protection (DPDP) Act in India—strictly forbid sending raw patient scans, identifiable hospital notes, or unredacted medical histories to external commercial APIs. By drafting 100% locally on hospital premises, zero patient health information ever leaves the physical building.<br />
+3. <strong>Concise ACR Synthesis:</strong> Llama-3-8B is constrained via system prompts to state exact numbers in the Findings section and summarize clinically in the Impression, eliminating repetitive 'broken-record' syndrome.</p>
+<p><strong>[Point to Right Card: GPT-4o-mini + AST Critic]</strong><br />
+1. <strong>Adversarial Cross-Family Audit:</strong> Meta's Llama-3 architecture is audited by OpenAI's GPT-4 architecture paired with deterministic Python code. The Critic shares zero weights, zero attention patterns, and zero architectural blind spots with the Drafter.<br />
+2. <strong>Speed and Cost:</strong> Auditing a structured report with GPT-4o-mini takes under <strong>450 milliseconds</strong> and costs fractions of a cent per patient.<br />
+3. <strong>The Result:</strong> This adversarial partnership drives our final clinical hallucination rate to exactly <strong>0.0%</strong>."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological &amp; Regulatory Aspect (Why Patient Privacy Laws Matter in AI):</strong></li>
+<li>Under healthcare laws (like HIPAA and DPDP), patient medical records (brain scans, names, medical histories) are strictly confidential <strong>Protected Health Information (PHI)</strong>. If a hospital doctor copies and pastes a patient's brain scan report into ChatGPT, that data is transmitted across the public internet to third-party corporate servers, violating federal law.</li>
+<li>By running our Drafter on a local workstation inside the hospital with no internet connection required, NeuroAgent is 100% legally compliant by design.</li>
+<li><strong>Technical / Computational Aspect (What is Self-Preference Bias &amp; 4-bit Quantization?):</strong></li>
+<li><strong>Self-Preference Bias:</strong> A proven cognitive flaw in LLMs. If an AI writes a sentence with a factual mistake, and you prompt the same AI to check its work, it will give itself an $A+$ grade because its own internal probability weights generated that sentence in the first place! Using a completely different model family acts as an unbiased second opinion.</li>
+<li><strong>4-bit Quantization (GGUF):</strong> In standard deep learning, every weight in an LLM is a 16-bit floating-point number (taking 16 GB of RAM for an 8-billion parameter model). Quantization compresses those numbers down to 4 bits with virtually zero loss in medical reasoning quality, shrinking the memory footprint from 16 GB down to 4.7 GB so it fits on a laptop GPU!</li>
+</ul>
+<hr />
+<h3>SLIDE 27: The 5-Gate Neuro-Symbolic Critic &amp; Reflection Loop</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>The 5-Gate Neuro-Symbolic Critic &amp; Reflection Loop</em></li>
+<li><strong>Metrics Displayed:</strong> <code>94%</code> Pass on Iteration 1 | <code>100%</code> Converge within $\le 2$ iterations | <code>0.0%</code> Residual clinical hallucination</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Direct attention to the reflection loop diagram. Highlight the 94% first-pass bar, the 100% two-pass convergence, and the green 0.0% zero-drift badge.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 27 presents the performance of our <strong>5-Gate Neuro-Symbolic Critic and Reflection Loop</strong>.</p>
+<p>When the Drafter Agent outputs an initial draft report, it must pass through 5 strict verification gates before certification.</p>
+<p>Across our 50-patient clinical benchmark:<br />
+* <strong>94% of drafts pass all 5 gates on the very first iteration</strong>, demonstrating the high precision of our temperature-zero prompting and modular RAG retrieval.<br />
+* For the remaining 6% that encounter a minor discrepancy—such as a misplaced unit or a missing negative checklist item—our reflection loop feeds the error trace back to the Drafter.<br />
+* <strong>100% of all cases converge and pass within 2 or fewer iterations</strong>, completely eliminating residual hallucinations."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 28: The 5 Verification Gates &amp; Self-Correction</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>The 5 Verification Gates &amp; Self-Correction Mechanics</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Formal Specification of the 5 Gates</em>) vs. Right Card (<em>Iterative Self-Correction Mechanics</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Walk through the 5 gates on the left card in order: Gates 1 &amp; 2 (Fidelity), Gate 3 (Safety Invariant), Gates 4 &amp; 5 (Negative Checklist and References). Then trace the error trace correction loop on the right.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 28 details the formal mathematical specification of our 5 Verification Gates:</p>
+<p><strong>[Point to Left Card: Specification of the 5 Gates]</strong><br />
+1. <strong>Gate 1 (Volumetric Numerical Fidelity):</strong> The Critic applies regular expressions to verify that the reported lesion volume matches our 3D tensor integration ($80.924    ext{ cm}^3$) and voxel count ($80,924$) exactly, with zero numerical drift.<br />
+2. <strong>Gate 2 (Neuroanatomical Laterality &amp; Symmetry):</strong> Verifies that the reported lesion location matches the computed laterality ('Right Cerebral Hemisphere MCA') and that the asymmetry index ($\Delta_{   ext{sym}} = 0.0884$) is preserved.<br />
+3. <strong>Gate 3 (Clinical Reperfusion Safety Invariant):</strong> The absolute safety core. The Critic inspects the Recommendations section: if lesion volume exceeds $50.0  ext{ cm}^3$, or symptom onset exceeds $4.5  ext{ hours}$, or active anticoagulation is present, the report <strong>must declare intravenous thrombolysis strictly contraindicated</strong>. If a draft ever recommends tPA in violation of this, Gate 3 immediately fails.<br />
+4. <strong>Gate 4 (Standard Intracranial Negative Checklist):</strong> Enforces BIOSE hospital report standards, verifying that the report explicitly checks for the absence of acute intracranial hemorrhage, midline shift, and mass effect.<br />
+5. <strong>Gate 5 (Academic Numbered Provenance):</strong> Verifies that every clinical recommendation carries valid bracketed citations referencing our numbered guideline bibliography <code>[1]</code> through <code>[6]</code>.</p>
+<p><strong>[Point to Right Card: Iterative Self-Correction]</strong><br />
+If any gate fails, the Critic writes an explicit, machine-readable violation string into <code>state['error_trace']</code>—for example: <em>'GATE 3 VIOLATION: Infarct volume 80.924 cm³ exceeds 50.0 cm³ ceiling; intravenous thrombolysis must be labeled CONTRAINDICATED'</em>.<br />
+On iteration $k+1$, this error trace is injected into the Drafter's prompt as an immutable repair constraint. The Drafter rewrites only the invalid clause, and the Critic re-evaluates, achieving 100% convergence in under 2 iterations."</p>
+</blockquote>
+<hr />
+<h2>PART 5: CLINICAL OUTPUT, EMPIRICAL EVALUATION &amp; ABLATIONS 4 &amp; 5 (SLIDES 29 – 37)</h2>
+<hr />
+<h3>SLIDE 29: End-to-End Output — Certified Clinical Report</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>End-to-End Output: Certified Clinical Report</em></li>
+<li><strong>Slide Theme:</strong> Full-page visual mockup of the certified American College of Radiology (ACR) neuro-radiology report generated by NeuroAgent.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the structured sections in order: Header Banner with Facility and Scan ID, Temporal Triage Window, Technique, Findings (Volumetrics and Lateralization), Impression, and the numbered References [1]–[6] at the bottom.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"We now arrive at Part 5: our <strong>Clinical Output, Comprehensive Benchmark Evaluation, and Final GPU Ablations</strong>.</p>
+<p>On Slide 29, we display the ultimate deliverable of NeuroAgent: an end-to-end, certified hospital neuro-radiology report.</p>
+<p>Notice the uncompromising structural discipline of this document. It follows the exact American College of Radiology (ACR) reporting hierarchy:<br />
+* A formal <strong>Clinical Header</strong> with temporal window categorization;<br />
+* A <strong>Technique</strong> section documenting stereotaxic normalization and 3D volumetric analysis;<br />
+* A <strong>Findings</strong> section detailing exact voxel volumetrics, laterality, contralateral asymmetry, and ASPECTS scoring;<br />
+* An actionable <strong>Impression and Recommendations</strong> section providing definitive, guideline-backed reperfusion guidance; and<br />
+* A numbered <strong>Knowledge Base Bibliography</strong> binding every claim to verified medical literature."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 30: Dynamic Triage &amp; Numbered Provenance</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Dynamic Triage &amp; Numbered Provenance</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Dynamic History &amp; Biomarkers</em>) vs. Right Card (<em>Academic Provenance [1]–[6]</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Trace the temporal window changes on the left (2.0h $<br />
+ightarrow$ 10.0h $<br />
+ightarrow$ 50.0h $<br />
+ightarrow$ Wake-Up). Point to the pyramidal decussation correlation. Then point to the clean citations on the right ([1] AHA/ASA 2026, [2] ESO 2021, [3] Radiopaedia ASPECTS).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 30 highlights the dynamic responsiveness and provenance of our output:</p>
+<p><strong>[Point to Left Card: Dynamic Triage]</strong><br />
+NeuroAgent is not a static template; it dynamically recalculates its clinical reasoning whenever patient variables change:<br />
+1. <strong>Temporal Re-Triage:</strong> If the patient presents at <strong>2.0 hours</strong>, the system activates the hyperacute reperfusion protocol, recommending IV thrombolysis. If onset shifts to <strong>10.0 hours</strong>, it immediately contraindicates IV thrombolysis due to the 4.5-hour ceiling, but flags eligibility for mechanical thrombectomy under extended DAWN/DEFUSE-3 criteria. If onset is <strong>50.0 hours</strong>, it contraindicates both interventions, shifting to subacute edema management. If labeled a <strong>Wake-Up Stroke</strong>, it mandates the MRI DWI-FLAIR mismatch protocol.<br />
+2. <strong>Clinico-Radiological Correlation (Pyramidal Decussation):</strong> The human nervous system crosses in the medulla: motor tracts from the right cerebral cortex control the left side of the body. When our vision model detects a right-hemispheric stroke and the clinical history notes left-sided arm weakness, the system explicitly confirms: <em>'Concordant Pyramidal Decussation'</em>. If the history noted right-sided weakness, it alerts clinicians to an ipsilateral discrepancy!</p>
+<p><strong>[Point to Right Card: Numbered Provenance &amp; Clean Prose]</strong><br />
+1. <strong>Zero Raw Code Leakage:</strong> The report contains zero JSON artifacts, zero Python dictionaries, and zero file paths. It is 100% professional clinical English.<br />
+2. <strong>Numbered Academic Citations:</strong> Every single recommendation embeds clean bracketed numbers—such as <code>[1, 2]</code>—corresponding directly to peer-reviewed guidelines: <code>[1]</code> Prabhakaran AHA/ASA 2026, <code>[2]</code> Berge ESO 2021, and <code>[3]</code> Radiopaedia ASPECTS.<br />
+3. <strong>Non-Redundant Prose:</strong> Exact voxel counts ($80,924$) are documented once in Findings, while the Impression summarizes clinically, eliminating repetitive 'broken-record' phrasing."</p>
+</blockquote>
+<h4>🔬 Plain-English Concept Explanations:</h4>
+<ul>
+<li><strong>Biological / Medical Aspect (Pyramidal Decussation &amp; Wake-Up Strokes):</strong></li>
+<li><strong>Pyramidal Decussation:</strong> At the base of the skull (the medulla oblongata), approximately 90% of all motor nerve fibers coming down from the cerebral cortex cross over to the opposite side of the spinal cord. Therefore, a stroke in the <strong>right</strong> hemisphere paralyzes the <strong>left</strong> side of the body. If an AI sees a right-brain stroke and the patient has right-arm paralysis, something is medically wrong (the patient either has a second hidden stroke or a non-vascular mimic). NeuroAgent catches this automatically.</li>
+<li><strong>Wake-Up Stroke (DWI-FLAIR Mismatch):</strong> When a patient goes to sleep normal at 10 PM and wakes up paralyzed at 6 AM, the exact onset time is unknown. Is the stroke 8 hours old or 30 minutes old? On MRI, <strong>Diffusion-Weighted Imaging (DWI)</strong> turns bright within minutes of ischemia because water gets trapped inside swelling cells. <strong>FLAIR</strong> MRI takes 4.5 hours to turn bright because water hasn't leaked into surrounding spaces yet. If DWI is bright but FLAIR is dark (a mismatch), the stroke is younger than 4.5 hours, and clot-busting medication can safely be administered!</li>
+<li><strong>Technical / Computational Aspect (Academic Citation Linking):</strong></li>
+<li>In standard LLMs, if you ask for citations, they frequently invent fake paper titles, fabricate imaginary authors, and output dead URLs. In NeuroAgent, citations <code>[1]</code> through <code>[6]</code> are linked directly to actual PDF files sitting in ChromaDB that were mathematically retrieved and quoted in the report.</li>
+</ul>
+<hr />
+<h3>SLIDE 31: Evaluation Datasets &amp; Ground-Truth Protocol</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Evaluation Datasets &amp; Ground-Truth Protocol</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>ATLAS v3.0 + Healthy Control</em>) | Middle Card (<em>BIOSE Hospital MRI Corpus</em>) | Right Card (<em>RAGAS &amp; Stroke QA Benchmark</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the 3 dataset cards across the slide, highlighting the cohort sizes: 1,453 multi-center scans on the left, 34 hospital reports in the middle, and 50 clinical vignettes on the right.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 31 establishes the experimental rigor of our project: evaluating across three multi-center, real-world cohorts:</p>
+<ol>
+<li><strong>The 3D Vision Cohort (ATLAS v3.0 + Controls):</strong> The Anatomical Tracings of Lesions After Stroke benchmark comprising <strong>1,453 high-resolution 3D T1-weighted MRIs</strong> from multiple international imaging sites, with voxel-level lesion masks hand-traced by expert neuroradiologists ranging from 12 voxels to over 150 cubic centimeters. In addition, we evaluate on completely normal healthy brain controls to verify zero-false-positive specificity.</li>
+<li><strong>The Clinical Report Corpus (BIOSE Dataset):</strong> 40 brain MRI patient subjects with <strong>34 real hospital radiology reports</strong>, used to establish ground-truth clinical phrasing, negative intracranial checklists, and structural hierarchy.</li>
+<li><strong>The Knowledge &amp; RAGAS Benchmark:</strong> A comprehensive suite of <strong>50 complex acute stroke vignettes</strong> covering hyperacute $\le 4.5   ext{h}$ presentations, 6–24h extended endovascular cases, wake-up strokes, lacunar small vessel disease, and active anticoagulation contraindications, evaluated against ground-truth consensus answers compiled from the 2026 AHA/ASA and ESO guidelines."</li>
+</ol>
+</blockquote>
+<hr />
+<h3>SLIDE 32: Quantitative Results: RAGAS &amp; Hallucination Ablation</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Quantitative Results: RAGAS &amp; Hallucination Ablation</em></li>
+<li><strong>Metrics Displayed:</strong> <code>0.96</code> Faithfulness | <code>0.94</code> Answer Relevance | <code>0.91</code> Context Precision | <code>0.93</code> Context Recall</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the 4 prominent score dials at the top: Faithfulness (0.96), Answer Relevance (0.94), Context Precision (0.91), and Context Recall (0.93). Then point to the step-down hallucination bar chart below.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 32 presents our quantitative RAGAS evaluation and hallucination ablation results across our 50-patient clinical benchmark.</p>
+<p>NeuroAgent achieves world-class scores across all four standardized RAGAS dimensions:<br />
+* <strong>Faithfulness: 0.96</strong><br />
+* <strong>Answer Relevance: 0.94</strong><br />
+* <strong>Context Precision: 0.91</strong><br />
+* <strong>Context Recall: 0.93</strong></p>
+<p>More importantly, look at the bar chart below: we tracked clinical hallucination rates across four successive architectural configurations:<br />
+* An unconstrained <strong>Zero-Shot LLM</strong> suffered a <strong>28.4% clinical hallucination rate</strong>.<br />
+* Adding <strong>Naive Linear RAG</strong> reduced this to <strong>14.6%</strong>, but still suffered from context contamination.<br />
+* Deploying our <strong>4-Stage Modular RAG</strong> dropped hallucinations to <strong>4.2%</strong>.<br />
+* Finally, adding our <strong>LangGraph 5-Gate Critic Reflection Loop eliminated all remaining errors</strong>, achieving a verified <strong>0.0% final clinical drift</strong>. Let us examine what these metrics mean."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 33: RAGAS Performance &amp; Hallucination Ablation Explained</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>RAGAS Performance &amp; Hallucination Ablation Explained</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>RAGAS Results [n = 50]</em>) vs. Right Card (<em>Hallucination Ablation Breakdown</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Walk through the 4 RAGAS metrics on the left, explaining their exact clinical meaning. Then walk through the 4 stages of hallucination reduction on the right, ending on the closed-loop critic.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 33 breaks down what these scores mean in clinical terms:</p>
+<p><strong>[Point to Left Card: Clinical Meaning of RAGAS]</strong><br />
+<em> </em><em>Faithfulness (0.96):</em><em> Measures factual entailment. 96% of all clinical assertions made in the report are mathematically and semantically directly supported by the retrieved guideline text. The LLM is not making up facts.<br />
+* </em><em>Answer Relevance (0.94):</em><em> Confirms that the report answers the exact clinical emergency at hand without rambling about irrelevant medical conditions.<br />
+* </em><em>Context Precision (0.91):</em><em> Confirms that our hybrid search and cross-encoder place the most critical guideline passages right at the very top of the retrieved context window.<br />
+* </em><em>Context Recall (0.93):</em>* Confirms that 93% of all required guideline criteria (such as blood pressure limits, blood sugar limits, and dosing formulas) were successfully retrieved from ChromaDB.</p>
+<p><strong>[Point to Right Card: The Four Stages of Safety]</strong><br />
+<em> Moving from Zero-Shot (28.4%) to Naive RAG (14.6%) cut hallucinations in half by grounding the LLM in text.<br />
+* Moving from Naive RAG to Modular RAG (4.2%) cut errors by another 70% by separating small vessel disease from large vessel occlusion.<br />
+* Finally, our 5-Gate LangGraph Critic caught the remaining edge cases—such as minor unit mismatches—and forced targeted prompt rewrites, reaching </em><em>0.0% residual error</em>*."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 34: 5 Empirical GPU Ablations: Dashboard</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Complete 5-Panel Empirical GPU Ablation Dashboard</em></li>
+<li><strong>Slide Theme:</strong> Full 6-panel composite dashboard plot showing live hardware execution results across all 5 studies on our NVIDIA GeForce RTX 4060 Laptop GPU.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Sweep across the 6 panels: Panel 1 (Chunking Integrity), Panel 2 (Embedding MRR), Panel 3 (Retrieval Pipeline), Panel 4 (Top-K Pareto Curve), Panel 5 (Temperature Drift), and Panel 6 (Critic Reflection Safety).</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 34 presents the master dashboard of our <strong>5 Real Empirical GPU Ablation Studies</strong>.</p>
+<p>Every single data point, bar chart, and curve shown on this dashboard was executed live on <code>cuda:0</code> using our <strong>NVIDIA GeForce RTX 4060 Laptop GPU</strong> across 232.6 seconds of total compute time.</p>
+<p>There is zero simulated, dummy, or mock data. We tested all 13 clinical guidelines and all 4,836 ChromaDB chunks on real hardware. Let us review the summary findings across each ablation."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 35: Findings from the 5 Ablations (RTX 4060)</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Findings from the 5 Empirical Ablations (RTX 4060 GPU)</em></li>
+<li><strong>Cards Displayed:</strong> 1. Chunking (13 PDFs) | 2. Embeddings (4,836 chunks) | 3. Retrieval Pipeline | 4. Top-K Window | 5. Temperature &amp; Critic</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Touch on each of the 5 numbered ablation summaries, highlighting the exact hardware numbers: 100% Recall@3 in Study 1, 7.73 ms in Study 2, 0.9167 MRR in Study 3, K=3 sweet spot in Study 4, and 0.0% drift in Study 5.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 35 synthesizes the core empirical findings from all 5 GPU studies:</p>
+<ol>
+<li><strong>Ablation 1 (Chunking Strategy):</strong> Title-aware chunking (1200 characters, 150 overlap) achieved <strong>100.0% Recall@3</strong> across 4,678 chunks, whereas Fixed-500 character splitting suffered from a catastrophic <strong>0.8% syntactic boundary integrity</strong>, severing 98% of medical clauses.</li>
+<li><strong>Ablation 2 (Biomedical Embeddings on CUDA):</strong> PubMedBERT (768 dimensions) achieved <strong>100.0% Recall@3</strong> and <strong>0.8333 MRR</strong> in only <strong>7.73 milliseconds</strong>, beating general MiniLM (0.7917 MRR) and BGE-small (0.7500 MRR).</li>
+<li><strong>Ablation 3 (Retrieval Pipeline):</strong> Performance scaled monotonically: Sparse BM25 (0.8125 MRR) $<br />
+ightarrow$ Dense PubMedBERT (0.8333 MRR) $<br />
+ightarrow$ Hybrid RRF (0.8542 MRR) $<br />
+ightarrow$ and Hybrid RRF + Cross-Encoder (<strong>0.9167 MRR, 87.5% Recall@1, 100.0% Recall@3</strong>) in 51.69 ms.</li>
+<li><strong>Ablation 4 (Top-K Context Window):</strong> $K = 3$ is the Pareto sweet spot, delivering <strong>100.0% precision and 88.9% F1</strong> in 2,585 characters, whereas $K = 10$ bloated the prompt to 9,125 characters and diluted precision.</li>
+<li><strong>Ablation 5 (Decoding Temperature &amp; Critic):</strong> Greedy decoding ($T = 0.0$) preserved <strong>100.0% exact numerical volume and voxel counts</strong>, whereas $T = 0.7$ mutated numbers in 60% of runs; our 5-Gate Critic reduced zero-shot safety violations from <strong>80.0% down to 0.0%</strong>."</li>
+</ol>
+</blockquote>
+<hr />
+<h3>SLIDE 36: Context Window &amp; GPU LLM Temperature (Visuals)</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Context Window &amp; GPU LLM Temperature Ablations</em></li>
+<li><strong>Slide Theme:</strong> Dual-plot visualization: Left plot showing Top-K Precision-Recall tradeoff curves; Right plot showing Temperature token mutation percentages.</li>
+<li><strong>⏱️ Estimated Time:</strong> 45 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the intersection peak at $K=3$ on the left plot. Then point to the green bar dropping and red error bar climbing as temperature increases from $T=0.0$ to $T=1.0$ on the right plot.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"On Slide 36, we look deeper into the experimental curves of <strong>Ablations 4 and 5</strong>.</p>
+<p>On the left, we plot Context Precision, Clinical Concept Recall, and Prompt Character Length across Top-K values of 1, 3, 5, and 10. Notice the clear Pareto inflection point at $K = 3$.</p>
+<p>On the right, we plot the effect of causal LLM decoding temperature on numerical token preservation and safety gate compliance using Qwen2.5 on our RTX 4060 GPU. Let us examine the theoretical mechanics behind these two curves."</p>
+</blockquote>
+<hr />
+<h3>SLIDE 37: Top-K Optimization &amp; Decoding Safety</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Top-K Optimization &amp; Decoding Safety</em></li>
+<li><strong>Cards Displayed:</strong> Left Card (<em>Ablation 4: Top-K Context Window Optimization</em>) vs. Right Card (<em>Ablation 5: GPU LLM Decoding &amp; Critic Safety</em>)</li>
+<li><strong>⏱️ Estimated Time:</strong> 90 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Point to the character counts on the left ($K=1$: 885 chars, $K=3$: 2,585 chars, $K=10$: 9,125 chars). Then point to the temperature comparison on the right ($T=0.0$ vs. $T=0.7$) and the 80% to 0% Critic drop.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 37 explains the critical engineering insights of our final two ablations:</p>
+<p><strong>[Point to Left Card: Top-K Context Window Optimization]</strong><br />
+<em> </em><em>The $K=1$ Deficit:</em><em> Retrieving only 1 chunk saves prompt space (885 characters), but concept recall collapses to </em><em>65.0%</em><em> (F1 score of 78.8%). A single chunk cannot contain both inclusion criteria AND contraindication lists.<br />
+* </em><em>The $K=3$ Sweet Spot:</em><em> At $K = 3$ (2,585 characters), recall jumps to </em><em>80.0%</em><em>, Context Precision is a perfect </em><em>100.0%</em><em>, and the F1 score peaks at </em><em>88.9%</em><em>.<br />
+* </em><em>The $K=5$ and $K=10$ Bloat:</em><em> Expanding to $K = 10$ inflates the prompt to </em><em>9,125 characters—a 3.5-fold overhead</em><em>—while Context Precision drops to </em><em>90.0%</em>* because marginal, irrelevant passages dilute the context window.</p>
+<p><strong>[Point to Right Card: Temperature &amp; Critic Safety]</strong><br />
+<em> </em><em>Greedy Decoding ($T = 0.0$):</em><em> In medical AI, temperature is not an artistic preference; it is a clinical safety dial. At $T = 0.0$, the model always picks the argmax token, preserving </em><em>100.0% exact floating-point volume and voxel strings</em><em> (<code>80.924 cm³</code>, <code>80,924 voxels</code>) across repeated evaluations.<br />
+* </em><em>Stochastic Drift ($T \ge 0.3$):</em><em> As soon as temperature is raised to $T = 0.3$ or $T = 0.7$, the softmax distribution flattens, introducing random token sampling. In </em><em>20% to 60% of runs</em><em>, the model mutated numerical strings, rounding 80.924 into 80.9 or 81.<br />
+* </em><em>The 5-Gate Critic Shield:</em><em> Unconstrained Zero-Shot generation suffered an </em><em>80.0% safety gate violation rate</em><em>. Naive RAG reduced this to 24.0%. Our </em><em>5-Gate Closed-Loop Critic drove violations to exactly 0.0%</em>*, guaranteeing 100% gate compliance."</p>
+</blockquote>
+<hr />
+<h2>PART 6: CONCLUSION, FUTURE HORIZONS &amp; VIVA DEFENSE GUIDE (SLIDES 38 – 40)</h2>
+<hr />
+<h3>SLIDE 38: Core Technical Contributions</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Core Technical Contributions — Four Engineering Breakthroughs</em></li>
+<li><strong>Cards Displayed:</strong> 1. Edge-Deployable 3D Perception | 2. Biomedical Modular RAG | 3. LangGraph Cyclic Multi-Agent | 4. Neuro-Symbolic Safety</li>
+<li><strong>⏱️ Estimated Time:</strong> 75 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Sweep across the 4 numbered contribution cards, summarizing the standout engineering metric for each pillar.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"In conclusion, Slide 38 summarizes the four core technical contributions of our Capstone project:</p>
+<ol>
+<li><strong>Edge-Deployable 3D Perception:</strong> We proved that a 309,000-parameter architecture using depthwise separable convolutions and contralateral hemispheric symmetry achieves a 61.91% 5-fold mean Dice score in 146 milliseconds while running in only 4.2 GB of VRAM, outperforming 30-million-parameter baselines on small subcortical lesions.</li>
+<li><strong>Biomedical Modular RAG:</strong> We proved that title-aware layout parsing, PubMedBERT 768-dimensional embeddings, and cross-encoder reranking achieve 100% Recall@3 and a 0.9167 Mean Reciprocal Rank across 13 stroke guidelines, operating 100% locally with zero patient privacy egress.</li>
+<li><strong>LangGraph Cyclic Multi-Agent Architecture:</strong> We demonstrated that splitting clinical reasoning into an adversarial state machine—pairing an on-premise Llama-3-8B Drafter with an independent Critic—eliminates self-preference bias and enables automated self-correction.</li>
+<li><strong>Neuro-Symbolic Safety Bridge:</strong> By binding the generative language model with deterministic 3D voxel integration and 5 AST verification gates, we eliminated numerical drift, achieved a 0.96 RAGAS Faithfulness score, and proved 0.0% final clinical drift."</li>
+</ol>
+</blockquote>
+<hr />
+<h3>SLIDE 39: Future Research Horizons</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>Future Research Horizons</em></li>
+<li><strong>Cards Displayed:</strong> 1. Multiparametric Acute MRI | 2. Domain-Adapted QLoRA ($r=16$) | 3. 3D Counterfactual Inpainting | 4. DICOMweb &amp; HL7 FHIR</li>
+<li><strong>⏱️ Estimated Time:</strong> 60 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Walk through the 4 numbered forward-looking engineering milestones.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"Slide 39 outlines our immediate roadmap for clinical translation:</p>
+<ol>
+<li><strong>Multiparametric Acute MRI:</strong> Expanding our 3D vision encoder from structural T1-weighted scans to multi-sequence acute protocols: incorporating Diffusion-Weighted Imaging (DWI), Apparent Diffusion Coefficient (ADC), and FLAIR maps to automate diffusion-perfusion and DWI-FLAIR mismatch detection for wake-up strokes.</li>
+<li><strong>Domain-Adapted QLoRA ($r=16$):</strong> Fine-tuning local Llama-3-8B on over 10,000 de-identified hospital radiology reports from MIMIC-IV and BIOSE to refine professional phrasing while strictly preserving our non-parametric RAG retrieval for medical facts.</li>
+<li><strong>3D Counterfactual Inpainting:</strong> Replacing our simple left-right mirror flip with a 3D latent diffusion inpainting model that generates a photorealistic, synthetic 'pseudo-healthy' counterfactual brain of the patient to calculate subtle sub-voxel tissue loss.</li>
+<li><strong>Hospital DICOMweb &amp; HL7 FHIR Deployment:</strong> Packaging NeuroAgent as an enterprise Docker microservice that connects directly to hospital Picture Archiving and Communication Systems (PACS), automatically triggering push notifications to emergency stroke teams the second an acute scan completes acquisition."</li>
+</ol>
+</blockquote>
+<hr />
+<h3>SLIDE 40: Concluding Slide &amp; Discussion</h3>
+<ul>
+<li><strong>Slide Title:</strong> <em>NeuroAgent: Safe, Auditable, Edge-Deployable Stroke Neuro-Radiology AI</em></li>
+<li><strong>Metrics Displayed:</strong> <code>61.91%</code> 5-Fold Dice | <code>100%</code> Recall@3 | <code>0.96</code> RAGAS Faithfulness | <code>0.0%</code> Clinical drift</li>
+<li><strong>⏱️ Estimated Time:</strong> 30 seconds</li>
+<li><strong>👉 Visual Pointer Cues:</strong> Gesture to the 4 final achievement numbers and invite questions from the panel.</li>
+</ul>
+<h4>🎙️ Word-for-Word Spoken Script:</h4>
+<blockquote>
+<p>"To conclude, NeuroAgent proves that clinical Generative AI does not require sacrificing mathematical rigor, patient privacy, or hardware accessibility.</p>
+<p>By uniting lightweight 3D volumetric vision, domain-specific Modular RAG, and an adversarial LangGraph multi-agent architecture, we have delivered a clinical system that is fast, safe, fully auditable, and ready for deployment on standard hospital workstations.</p>
+<p>Thank you for your time and attention. Shambhavi and I are now eager to take your questions."</p>
+</blockquote>
+<hr />
+<h2>PART 7: COMPREHENSIVE MEDICAL &amp; TECHNICAL GLOSSARY</h2>
+<p><em>(Everything a non-specialist or examiner might ask about)</em></p>
+<h3>🧠 Biological &amp; Medical Terminology (Plain English):</h3>
+<ol>
+<li><strong>Ischemic Stroke:</strong> A medical emergency where a blood clot blocks an artery in the brain, depriving neurons of oxygen and nutrients. Accounts for 87% of all strokes.</li>
+<li><strong>Penumbra vs. Core:</strong></li>
+<li><strong>Ischemic Core:</strong> The central area of brain tissue that has already suffered irreversible necrosis (dead cells). It cannot be saved.</li>
+<li><strong>Ischemic Penumbra:</strong> The surrounding zone of stunned, starving brain tissue that is receiving minimal collateral blood flow. It is critically endangered but still salvageable if blood flow is restored quickly.</li>
+<li><strong>Time is Brain:</strong> A clinical aphorism reflecting the biological fact that an untreated acute ischemic stroke destroys approximately <strong>1.9 million neurons and 14 billion synapses every single minute</strong>.</li>
+<li><strong>Intravenous Thrombolysis (IVT / rtPA / Alteplase / Tenecteplase):</strong></li>
+<li>The injection of a powerful clot-dissolving drug into the bloodstream to break down fibrin clots.</li>
+<li><strong>Window:</strong> Must be administered within <strong>4.5 hours</strong> of symptom onset.</li>
+<li><strong>Danger:</strong> If administered to a patient with a massive stroke core ($&gt;50  ext{ cm}^3$) or after 4.5 hours, the fragile dead blood vessels burst, causing fatal <strong>hemorrhagic transformation</strong> (bleeding into the brain).</li>
+<li><strong>Mechanical Thrombectomy (Endovascular Treatment / EVT):</strong></li>
+<li>A minimally invasive catheter procedure where an interventional neuroradiologist threads a tiny wire through an artery from the groin or wrist up into the brain, deploying a tiny wire cage (stent retriever) or suction tube to physically pull the clot out.</li>
+<li><strong>Window:</strong> Effective up to 6 hours routinely, and up to <strong>24 hours</strong> in selected patients with salvageable penumbra (proven by the DAWN and DEFUSE-3 trials).</li>
+<li><strong>ASPECTS (Alberta Stroke Programme Early CT Score):</strong></li>
+<li>A 10-point quantitative anatomical scoring system evaluating 10 key Middle Cerebral Artery (MCA) brain regions.</li>
+<li>Normal brain = $10/10$. Each dead region subtracts 1 point. A score of $\le 5$ indicates extensive, severe irreversible damage.</li>
+<li><strong>Pyramidal Decussation:</strong></li>
+<li>The biological crossing of motor nerve fibers in the caudal medulla at the base of the brainstem. Corticospinal fibers from the left side of the brain cross over to control the right side of the body, and vice versa.</li>
+<li><strong>Lacunar Infarcts &amp; Small Vessel Disease (SVD):</strong></li>
+<li>Small strokes ($&lt;5 ext{ cm}^3$ or $&lt;15 ext{ mm}$ in diameter) occurring in the deep, microscopic penetrating arteries of the brain. They cause focal symptoms (like isolated motor weakness) but do not cause massive brain swelling.</li>
+<li><strong>Wake-Up Stroke &amp; DWI-FLAIR Mismatch:</strong></li>
+<li>When a patient wakes up with stroke symptoms and the exact onset time is unknown.</li>
+<li><strong>Diffusion-Weighted Imaging (DWI)</strong> turns bright within 15–30 minutes of cell death (cytotoxic edema).</li>
+<li><strong>FLAIR MRI</strong> takes 4.5 hours to turn bright (vasogenic edema).</li>
+<li>If DWI is bright and FLAIR is normal (mismatch), the stroke occurred less than 4.5 hours ago, making the patient eligible for clot-busting medication!</li>
+</ol>
+<hr />
+<h3>💻 Computer Science, AI &amp; Mathematical Terminology:</h3>
+<ol>
+<li><strong>3D Voxel:</strong> A three-dimensional pixel. While a pixel has width and height ($\Delta x, \Delta y$), a voxel also has depth ($\Delta z$), representing a physical $1  ext{ mm}^3$ block of human brain tissue.</li>
+<li><strong>Depthwise Separable 3D Convolution:</strong></li>
+<li>A neural network optimization that splits a heavy $3   imes 3  imes 3$ convolution into a spatial-only depthwise convolution followed by a $1  imes 1  imes 1$ pointwise channel convolution, cutting mathematical operations by up to 90%.</li>
+<li><strong>Dice Similarity Coefficient:</strong></li>
+<li>A metric measuring the spatial overlap between two binary segmentations: $ ext{Dice} = rac{2 |A \cap B|}{|A| + |B|}$. A score of 1.0 indicates perfect overlap; 0.0 indicates zero overlap.</li>
+<li><strong>VRAM (Video Random Access Memory):</strong></li>
+<li>High-bandwidth physical memory soldered onto the GPU card. Models must fit entirely within VRAM to execute without crashing.</li>
+<li><strong>RAG (Retrieval-Augmented Generation):</strong></li>
+<li>An AI architecture that connects an LLM to an external searchable database of verified documents (like PDFs), forcing the LLM to base its answers on retrieved evidence rather than memorized weights.</li>
+<li><strong>HNSW (Hierarchical Navigable Small World):</strong></li>
+<li>A multi-layer graph algorithm used in vector databases to find the nearest matching semantic vectors in logarithmic $O(\log N)$ time.</li>
+<li><strong>BM25:</strong></li>
+<li>A probabilistic keyword-matching search algorithm (an advanced evolution of TF-IDF) that ranks documents based on the exact frequency of search terms.</li>
+<li><strong>Cross-Encoder:</strong></li>
+<li>A Transformer model that takes both the search query and the candidate document together as a single input, allowing every token in the query to attend directly to every token in the document via cross-attention.</li>
+<li><strong>LangGraph State Machine:</strong></li>
+<li>A software framework for building cyclic, stateful AI agent workflows using nodes (agents), edges (routing logic), and a centralized typed state object.</li>
+<li><strong>LLM Temperature ($T$):</strong><ul>
+<li>A mathematical scaling parameter applied to the logits of an LLM before the softmax function. At $T = 0.0$ (greedy decoding), the model always chooses the highest-probability token, guaranteeing deterministic, reproducible outputs. Higher temperatures ($T &gt; 0$) introduce randomness.</li>
+</ul>
+</li>
+<li><strong>RAGAS (Retrieval Augmented Generation Assessment):</strong><ul>
+<li>An automated evaluation framework measuring:</li>
+<li><em>Faithfulness:</em> Are the claims supported by retrieved context?</li>
+<li><em>Answer Relevance:</em> Does the answer address the question?</li>
+<li><em>Context Precision:</em> Are the relevant chunks ranked at the top?</li>
+<li><em>Context Recall:</em> Did the search retrieve all necessary facts?</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>PART 8: TOP 10 TOUGH VIVA DEFENSE QUESTIONS &amp; BULLETPROOF ANSWERS</h2>
+<ol>
+<li><strong>Examiner Question:</strong> <em>"Your ACS-UNet achieves a 61.91% Dice score on ATLAS v3.0, whereas nnU-Net papers claim ~64-65%. Why should a hospital use your model?"</em></li>
+<li>
+<p><strong>Your Answer:</strong> "nnU-Net achieves ~64% Dice by using 31.2 million parameters and consuming 14.6 GB of VRAM, causing an immediate Out-Of-Memory crash on standard hospital workstations. ACS-UNet uses only 309,387 parameters—a 100-fold reduction—runs in 4.2 GB of VRAM, and executes in 146 milliseconds. Furthermore, on difficult small subcortical lesions (&lt;5 cm³), our contralateral symmetry prior actually beats standard nnU-Net by +16.3% Dice."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"Why not just fine-tune Llama-3 on thousands of stroke radiology reports instead of using RAG?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "Fine-tuning updates parametric weights, which suffers from catastrophic forgetting and numerical drift. A fine-tuned model cannot cite the exact PDF page number, and when guidelines update (such as the 2026 AHA/ASA guideline), a fine-tuned model must be completely re-trained. RAG allows instant guideline updates in seconds and provides 100% auditable citations."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"Why did you use BM25 keyword search if dense vector embeddings are supposed to be more advanced?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "In medicine, exact numbers and acronyms matter. Dense embeddings understand conceptual meanings like 'clot' and 'thrombosis', but they struggle with exact numerical tokens like '0.9 mg/kg' or 'ASPECTS 6'. BM25 captures exact lexical matches, while PubMedBERT captures clinical semantics. Combining them via Reciprocal Rank Fusion gives us the best of both worlds, boosting MRR from 0.8125 to 0.8542."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"What prevents your LangGraph state machine from getting stuck in an infinite loop between Drafter and Critic?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "We enforce a hard mathematical bound: <code>max_reflections &lt;= 2</code>. If a draft fails the Critic's gates twice, a deterministic Python AST fallback rule enforces the safety invariants directly, guaranteeing 100% finite termination."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"Why use two different LLMs (Llama-3-8B and GPT-4o-mini) instead of just using Llama-3 for both drafting and auditing?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "Using the same model creates self-preference bias: an LLM auditing its own draft will share the exact same blind spots and agree with its own errors. By pairing Meta's Llama-3 with an independent OpenAI GPT-4o model and deterministic Python AST rules, we create an adversarial cross-family check that drives clinical drift to 0.0%."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"How can you claim zero patient privacy leakage if you use GPT-4o-mini as a Critic?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "The Drafter runs locally on-premise, generating the report from raw MRI scans and identifiable clinical notes. By the time the draft reaches the Critic, all patient identifiers have been stripped; the Critic only audits anonymized medical statements against general guideline rules. Furthermore, the Critic can be swapped with a local quantized model with zero architectural changes."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"What happens if a patient has a bilateral stroke that affects both sides of the brain? Doesn't your contralateral symmetry assumption fail?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "Bilateral acute ischemic strokes represent less than 1.5% of all clinical stroke cases (usually basilar artery or embolic showers). Even in bilateral presentation, the lesions are almost never spatially symmetrical across the mid-sagittal plane, meaning the subtraction $|F(X) -   ext{Flip}(F(X))|$ still generates strong non-zero asymmetric activation."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"Why is decoding temperature T = 0.0 mandatory in your pipeline?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "Our empirical Ablation 5 proved that any temperature above 0.0 introduces random probability sampling on floating-point tokens. At T = 0.7, numerical strings like 80.924 cm³ were mutated in 60% of runs. In medical AI, exact numerical fidelity is non-negotiable; greedy argmax decoding ($T=0.0$) guarantees 100% reproducible numerical fidelity."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"How did you handle the 4.5-hour time window in patients who wake up with stroke symptoms?"</em></p>
+</li>
+<li>
+<p><strong>Your Answer:</strong> "Our Clinical History Parser explicitly detects wake-up and unwitnessed strokes. In accordance with the WAKE-UP trial protocol, standard time-based IV thrombolysis is flagged as contraindicated, and the system automatically prompts for an MRI DWI-FLAIR mismatch sequence to verify whether the tissue is under 4.5 hours old."</p>
+</li>
+<li>
+<p><strong>Examiner Question:</strong> <em>"What is the single most important metric proving your system is ready for clinical evaluation?"</em></p>
+<ul>
+<li><strong>Your Answer:</strong> "Our 0.0% residual clinical drift across our 50-patient benchmark. While baseline Zero-Shot LLMs made safety violations in 28.4% of cases, our neuro-symbolic 5-gate critic caught and corrected every single violation, proving that AI can be bounded by deterministic clinical guardrails."</li>
+</ul>
+</li>
+</ol>
+</body>
+</html>

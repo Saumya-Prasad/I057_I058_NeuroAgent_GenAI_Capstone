@@ -1,0 +1,217 @@
+[
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s001_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s001\\ses-1\\anat\\sub-r001s001_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s001\\ses-1\\anat\\sub-r001s001_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 89.056,
+    "true_voxel_count": 89056,
+    "true_tier": "Large Territorial (> 15 cm\u00b3)",
+    "target_guidelines": [
+      "prabhakaran-et-al-2026",
+      "berge-et-al-2021",
+      "AHA-ASA"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 89.056 cm\u00b3 (89056 voxels) consistent with Large Territorial (> 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to prabhakaran-et-al-2026 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s002_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s002\\ses-1\\anat\\sub-r001s002_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s002\\ses-1\\anat\\sub-r001s002_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 104.591,
+    "true_voxel_count": 104591,
+    "true_tier": "Large Territorial (> 15 cm\u00b3)",
+    "target_guidelines": [
+      "prabhakaran-et-al-2026",
+      "berge-et-al-2021",
+      "AHA-ASA"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 104.591 cm\u00b3 (104591 voxels) consistent with Large Territorial (> 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to prabhakaran-et-al-2026 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s003_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s003\\ses-1\\anat\\sub-r001s003_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s003\\ses-1\\anat\\sub-r001s003_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 1.279,
+    "true_voxel_count": 1279,
+    "true_tier": "Small Subcortical / Lacunar (< 5 cm\u00b3)",
+    "target_guidelines": [
+      "STRIVE-2",
+      "powers-et-al-2019"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 1.279 cm\u00b3 (1279 voxels) consistent with Small Subcortical / Lacunar (< 5 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to STRIVE-2 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s004_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s004\\ses-1\\anat\\sub-r001s004_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s004\\ses-1\\anat\\sub-r001s004_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 32.931,
+    "true_voxel_count": 32931,
+    "true_tier": "Large Territorial (> 15 cm\u00b3)",
+    "target_guidelines": [
+      "prabhakaran-et-al-2026",
+      "berge-et-al-2021",
+      "AHA-ASA"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 32.931 cm\u00b3 (32931 voxels) consistent with Large Territorial (> 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to prabhakaran-et-al-2026 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s005_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s005\\ses-1\\anat\\sub-r001s005_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s005\\ses-1\\anat\\sub-r001s005_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 25.816,
+    "true_voxel_count": 25816,
+    "true_tier": "Large Territorial (> 15 cm\u00b3)",
+    "target_guidelines": [
+      "prabhakaran-et-al-2026",
+      "berge-et-al-2021",
+      "AHA-ASA"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 25.816 cm\u00b3 (25816 voxels) consistent with Large Territorial (> 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to prabhakaran-et-al-2026 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s006_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s006\\ses-1\\anat\\sub-r001s006_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s006\\ses-1\\anat\\sub-r001s006_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 2.601,
+    "true_voxel_count": 2601,
+    "true_tier": "Small Subcortical / Lacunar (< 5 cm\u00b3)",
+    "target_guidelines": [
+      "STRIVE-2",
+      "powers-et-al-2019"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 2.601 cm\u00b3 (2601 voxels) consistent with Small Subcortical / Lacunar (< 5 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to STRIVE-2 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s007_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s007\\ses-1\\anat\\sub-r001s007_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s007\\ses-1\\anat\\sub-r001s007_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 3.194,
+    "true_voxel_count": 3194,
+    "true_tier": "Small Subcortical / Lacunar (< 5 cm\u00b3)",
+    "target_guidelines": [
+      "STRIVE-2",
+      "powers-et-al-2019"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 3.194 cm\u00b3 (3194 voxels) consistent with Small Subcortical / Lacunar (< 5 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to STRIVE-2 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s008_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s008\\ses-1\\anat\\sub-r001s008_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s008\\ses-1\\anat\\sub-r001s008_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 1.686,
+    "true_voxel_count": 1686,
+    "true_tier": "Small Subcortical / Lacunar (< 5 cm\u00b3)",
+    "target_guidelines": [
+      "STRIVE-2",
+      "powers-et-al-2019"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 1.686 cm\u00b3 (1686 voxels) consistent with Small Subcortical / Lacunar (< 5 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to STRIVE-2 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s009_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s009\\ses-1\\anat\\sub-r001s009_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s009\\ses-1\\anat\\sub-r001s009_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 6.111,
+    "true_voxel_count": 6111,
+    "true_tier": "Small Territorial (5 - 15 cm\u00b3)",
+    "target_guidelines": [
+      "powers-et-al-2019",
+      "berge-et-al-2021"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 6.111 cm\u00b3 (6111 voxels) consistent with Small Territorial (5 - 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to powers-et-al-2019 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s010_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s010\\ses-1\\anat\\sub-r001s010_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s010\\ses-1\\anat\\sub-r001s010_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 79.902,
+    "true_voxel_count": 79902,
+    "true_tier": "Large Territorial (> 15 cm\u00b3)",
+    "target_guidelines": [
+      "prabhakaran-et-al-2026",
+      "berge-et-al-2021",
+      "AHA-ASA"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 79.902 cm\u00b3 (79902 voxels) consistent with Large Territorial (> 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to prabhakaran-et-al-2026 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s011_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s011\\ses-1\\anat\\sub-r001s011_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s011\\ses-1\\anat\\sub-r001s011_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 10.749,
+    "true_voxel_count": 10749,
+    "true_tier": "Small Territorial (5 - 15 cm\u00b3)",
+    "target_guidelines": [
+      "powers-et-al-2019",
+      "berge-et-al-2021"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 10.749 cm\u00b3 (10749 voxels) consistent with Small Territorial (5 - 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to powers-et-al-2019 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s012_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s012\\ses-1\\anat\\sub-r001s012_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s012\\ses-1\\anat\\sub-r001s012_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 10.109,
+    "true_voxel_count": 10109,
+    "true_tier": "Small Territorial (5 - 15 cm\u00b3)",
+    "target_guidelines": [
+      "powers-et-al-2019",
+      "berge-et-al-2021"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 10.109 cm\u00b3 (10109 voxels) consistent with Small Territorial (5 - 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to powers-et-al-2019 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s013_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s013\\ses-1\\anat\\sub-r001s013_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s013\\ses-1\\anat\\sub-r001s013_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 7.328,
+    "true_voxel_count": 7328,
+    "true_tier": "Small Territorial (5 - 15 cm\u00b3)",
+    "target_guidelines": [
+      "powers-et-al-2019",
+      "berge-et-al-2021"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 7.328 cm\u00b3 (7328 voxels) consistent with Small Territorial (5 - 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to powers-et-al-2019 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s014_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s014\\ses-1\\anat\\sub-r001s014_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s014\\ses-1\\anat\\sub-r001s014_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 12.265,
+    "true_voxel_count": 12265,
+    "true_tier": "Small Territorial (5 - 15 cm\u00b3)",
+    "target_guidelines": [
+      "powers-et-al-2019",
+      "berge-et-al-2021"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 12.265 cm\u00b3 (12265 voxels) consistent with Small Territorial (5 - 15 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to powers-et-al-2019 criteria."
+  },
+  {
+    "case_id": "anat",
+    "scan_file": "sub-r001s015_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "image_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s015\\ses-1\\anat\\sub-r001s015_ses-1_space-orig_desc-brain_T1w.nii.gz",
+    "mask_path": "C:\\Users\\Saumya_Shambhavi\\Downloads\\ATLAS3_Training_Raw\\ATLAS3_Training_Raw\\R001\\sub-r001s015\\ses-1\\anat\\sub-r001s015_ses-1_space-orig_label-lesion_desc-T1lesion_mask.nii.gz",
+    "true_volume_cm3": 4.796,
+    "true_voxel_count": 4796,
+    "true_tier": "Small Subcortical / Lacunar (< 5 cm\u00b3)",
+    "target_guidelines": [
+      "STRIVE-2",
+      "powers-et-al-2019"
+    ],
+    "gold_standard_report": "FINDINGS: Delineated ischemic burden of 4.796 cm\u00b3 (4796 voxels) consistent with Small Subcortical / Lacunar (< 5 cm\u00b3). IMPRESSION: Focal ischemic infarct. RECOMMENDATION: Clinical management according to STRIVE-2 criteria."
+  }
+]

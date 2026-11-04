@@ -1,0 +1,5 @@
+Configuration,Chunk_Size_Chars,Overlap_Chars,Total_Chunks,Recall@1_Pct,Recall@3_Pct,MRR,Mean_Cosine_Dist,ROUGE-L_Pct,METEOR_Pct,BLEU-4_Pct,Boundary_Preservation
+Config A: Micro-Chunks,400,50,14416,20.0,80.0,0.4667,0.4042,6.8,12.7,0.6,Moderate
+Config B: Optimal Semantic (Ours),1200,150,4778,60.0,80.0,0.7,0.3996,5.8,13.9,0.5,Low (Safe)
+Config C: Macro-Chunks,2500,300,2364,80.0,100.0,0.8667,0.3767,5.7,17.6,0.7,Low (Safe)
+Config D: Zero-Overlap,1200,0,4712,0.0,60.0,0.2,0.3636,12.3,21.3,1.7,High (Risk of fractured criteria)

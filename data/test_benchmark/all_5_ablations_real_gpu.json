@@ -1,0 +1,265 @@
+{
+  "hardware_device": "cuda",
+  "gpu_model": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "total_execution_time_sec": 232.6,
+  "num_clinical_pdfs": 13,
+  "num_chromadb_chunks": 4836,
+  "ablation_1_chunking": [
+    {
+      "Configuration": "1. Fixed-Token Split (500c, 0 Overlap)",
+      "Max_Chars": 500,
+      "Overlap": 0,
+      "Total_Chunks": 8724,
+      "Recall@1_Pct": 60.0,
+      "Recall@3_Pct": 80.0,
+      "MRR": 0.7,
+      "Boundary_Integrity_Pct": 0.8,
+      "Mean_Cosine_Dist": 0.3752,
+      "ROUGE_L_Pct": 14.8,
+      "BLEU_4_Pct": 2.9,
+      "GPU_Time_Sec": 2.58
+    },
+    {
+      "Configuration": "2. Recursive Split (800c, 100 Overlap)",
+      "Max_Chars": 800,
+      "Overlap": 100,
+      "Total_Chunks": 6675,
+      "Recall@1_Pct": 20.0,
+      "Recall@3_Pct": 80.0,
+      "MRR": 0.5,
+      "Boundary_Integrity_Pct": 1.1,
+      "Mean_Cosine_Dist": 0.3819,
+      "ROUGE_L_Pct": 9.5,
+      "BLEU_4_Pct": 0.9,
+      "GPU_Time_Sec": 3.62
+    },
+    {
+      "Configuration": "3. Title-Semantic Zero-Overlap (1200c, 0 Overlap)",
+      "Max_Chars": 1200,
+      "Overlap": 0,
+      "Total_Chunks": 4612,
+      "Recall@1_Pct": 60.0,
+      "Recall@3_Pct": 80.0,
+      "MRR": 0.7,
+      "Boundary_Integrity_Pct": 18.0,
+      "Mean_Cosine_Dist": 0.3774,
+      "ROUGE_L_Pct": 7.0,
+      "BLEU_4_Pct": 0.8,
+      "GPU_Time_Sec": 4.98
+    },
+    {
+      "Configuration": "4. Title-Semantic Micro (400c, 50 Overlap)",
+      "Max_Chars": 400,
+      "Overlap": 50,
+      "Total_Chunks": 14199,
+      "Recall@1_Pct": 20.0,
+      "Recall@3_Pct": 80.0,
+      "MRR": 0.5,
+      "Boundary_Integrity_Pct": 10.0,
+      "Mean_Cosine_Dist": 0.3828,
+      "ROUGE_L_Pct": 9.3,
+      "BLEU_4_Pct": 0.8,
+      "GPU_Time_Sec": 1.92
+    },
+    {
+      "Configuration": "5. Title-Semantic Optimal (1200c, 150 Overlap - Ours)",
+      "Max_Chars": 1200,
+      "Overlap": 150,
+      "Total_Chunks": 4678,
+      "Recall@1_Pct": 20.0,
+      "Recall@3_Pct": 100.0,
+      "MRR": 0.6,
+      "Boundary_Integrity_Pct": 17.4,
+      "Mean_Cosine_Dist": 0.3902,
+      "ROUGE_L_Pct": 8.9,
+      "BLEU_4_Pct": 1.4,
+      "GPU_Time_Sec": 4.7
+    }
+  ],
+  "ablation_2_embeddings": [
+    {
+      "Embedding_Model": "1. all-MiniLM-L6-v2 (384-d General)",
+      "Vector_Dim": 384,
+      "Recall@1_Pct": 75.0,
+      "Recall@3_Pct": 87.5,
+      "MRR": 0.7917,
+      "Mean_Cosine_Sim": 0.7553,
+      "Mean_Cosine_Dist": 0.2447,
+      "ROUGE_L_Pct": 13.0,
+      "Query_Latency_ms": 11.03,
+      "Corpus_Encode_Sec": 6.28
+    },
+    {
+      "Embedding_Model": "2. BAAI/bge-small-en-v1.5 (384-d General SOTA)",
+      "Vector_Dim": 384,
+      "Recall@1_Pct": 62.5,
+      "Recall@3_Pct": 87.5,
+      "MRR": 0.75,
+      "Mean_Cosine_Sim": 0.8582,
+      "Mean_Cosine_Dist": 0.1418,
+      "ROUGE_L_Pct": 12.4,
+      "Query_Latency_ms": 7.64,
+      "Corpus_Encode_Sec": 18.92
+    },
+    {
+      "Embedding_Model": "3. NeuML/pubmedbert-base-embeddings (768-d BioMed - Ours)",
+      "Vector_Dim": 768,
+      "Recall@1_Pct": 75.0,
+      "Recall@3_Pct": 100.0,
+      "MRR": 0.8333,
+      "Mean_Cosine_Sim": 0.7067,
+      "Mean_Cosine_Dist": 0.2933,
+      "ROUGE_L_Pct": 12.2,
+      "Query_Latency_ms": 7.73,
+      "Corpus_Encode_Sec": 44.89
+    }
+  ],
+  "ablation_3_retrieval": [
+    {
+      "Retrieval_Pipeline": "1. Sparse Lexical Only (Okapi BM25)",
+      "Recall@1_Pct": 75.0,
+      "Recall@3_Pct": 87.5,
+      "MRR": 0.8125,
+      "Concept_Coverage_Pct": 82.5,
+      "ROUGE_L_Pct": 17.2,
+      "Latency_ms": 9.54
+    },
+    {
+      "Retrieval_Pipeline": "2. Dense Semantic Only (PubMedBERT 768-d Cosine)",
+      "Recall@1_Pct": 75.0,
+      "Recall@3_Pct": 100.0,
+      "MRR": 0.8333,
+      "Concept_Coverage_Pct": 80.0,
+      "ROUGE_L_Pct": 12.2,
+      "Latency_ms": 7.89
+    },
+    {
+      "Retrieval_Pipeline": "3. Hybrid Search (BM25 + PubMedBERT RRF k=60)",
+      "Recall@1_Pct": 75.0,
+      "Recall@3_Pct": 100.0,
+      "MRR": 0.8542,
+      "Concept_Coverage_Pct": 82.5,
+      "ROUGE_L_Pct": 15.7,
+      "Latency_ms": 18.35
+    },
+    {
+      "Retrieval_Pipeline": "4. Hybrid RRF + GPU Cross-Encoder Reranker (Ours)",
+      "Recall@1_Pct": 87.5,
+      "Recall@3_Pct": 100.0,
+      "MRR": 0.9167,
+      "Concept_Coverage_Pct": 82.5,
+      "ROUGE_L_Pct": 13.4,
+      "Latency_ms": 51.69
+    }
+  ],
+  "ablation_4_topk": [
+    {
+      "Top_K": "K = 1",
+      "K_Value": 1,
+      "Doc_Hit_Rate_Pct": 75.0,
+      "Clinical_Concept_Recall_Pct": 65.0,
+      "Context_Precision_Pct": 100.0,
+      "Context_F1_Score_Pct": 78.8,
+      "Mean_Prompt_Chars": 878
+    },
+    {
+      "Top_K": "K = 3 (Optimal - Ours)",
+      "K_Value": 3,
+      "Doc_Hit_Rate_Pct": 100.0,
+      "Clinical_Concept_Recall_Pct": 80.0,
+      "Context_Precision_Pct": 100.0,
+      "Context_F1_Score_Pct": 88.9,
+      "Mean_Prompt_Chars": 2585
+    },
+    {
+      "Top_K": "K = 5",
+      "K_Value": 5,
+      "Doc_Hit_Rate_Pct": 100.0,
+      "Clinical_Concept_Recall_Pct": 80.0,
+      "Context_Precision_Pct": 95.0,
+      "Context_F1_Score_Pct": 86.9,
+      "Mean_Prompt_Chars": 4331
+    },
+    {
+      "Top_K": "K = 10",
+      "K_Value": 10,
+      "Doc_Hit_Rate_Pct": 100.0,
+      "Clinical_Concept_Recall_Pct": 92.5,
+      "Context_Precision_Pct": 90.0,
+      "Context_F1_Score_Pct": 91.2,
+      "Mean_Prompt_Chars": 9125
+    }
+  ],
+  "ablation_5a_temperature": [
+    {
+      "Temperature_Config": "T = 0.0 (Greedy Deterministic - Ours)",
+      "Temperature": 0.0,
+      "Exact_Vol_Voxel_Match_Pct": 100.0,
+      "First_Pass_Critic_Pass_Pct": 56.0,
+      "Pre_Critic_Drift_Rate_Pct": 44.0,
+      "Post_Critic_Reflection_Pass_Pct": 100.0,
+      "ROUGE_L_Pct": 23.1,
+      "GPU_Gen_Latency_ms": 3974.9
+    },
+    {
+      "Temperature_Config": "T = 0.3",
+      "Temperature": 0.3,
+      "Exact_Vol_Voxel_Match_Pct": 80.0,
+      "First_Pass_Critic_Pass_Pct": 68.0,
+      "Pre_Critic_Drift_Rate_Pct": 32.0,
+      "Post_Critic_Reflection_Pass_Pct": 100.0,
+      "ROUGE_L_Pct": 21.3,
+      "GPU_Gen_Latency_ms": 4056.6
+    },
+    {
+      "Temperature_Config": "T = 0.7",
+      "Temperature": 0.7,
+      "Exact_Vol_Voxel_Match_Pct": 40.0,
+      "First_Pass_Critic_Pass_Pct": 56.0,
+      "Pre_Critic_Drift_Rate_Pct": 44.0,
+      "Post_Critic_Reflection_Pass_Pct": 100.0,
+      "ROUGE_L_Pct": 19.1,
+      "GPU_Gen_Latency_ms": 3733.1
+    },
+    {
+      "Temperature_Config": "T = 1.0",
+      "Temperature": 1.0,
+      "Exact_Vol_Voxel_Match_Pct": 80.0,
+      "First_Pass_Critic_Pass_Pct": 72.0,
+      "Pre_Critic_Drift_Rate_Pct": 28.0,
+      "Post_Critic_Reflection_Pass_Pct": 100.0,
+      "ROUGE_L_Pct": 21.9,
+      "GPU_Gen_Latency_ms": 3471.0
+    }
+  ],
+  "ablation_5b_critic_loop": [
+    {
+      "Agent_Architecture": "1. Zero-Shot LLM (No RAG Context, No Critic)",
+      "Gate_Compliance_Pct": 20.0,
+      "Full_Report_Cert_Pct": 0.0,
+      "Hallucination_Violation_Pct": 80.0,
+      "ROUGE_L_Pct": 9.9
+    },
+    {
+      "Agent_Architecture": "2. Unconstrained RAG + LLM (T=0.7, No Critic Loop)",
+      "Gate_Compliance_Pct": 76.0,
+      "Full_Report_Cert_Pct": 0.0,
+      "Hallucination_Violation_Pct": 24.0,
+      "ROUGE_L_Pct": 18.2
+    },
+    {
+      "Agent_Architecture": "3. Modular RAG + Greedy LLM (T=0.0, No Critic Loop)",
+      "Gate_Compliance_Pct": 44.0,
+      "Full_Report_Cert_Pct": 0.0,
+      "Hallucination_Violation_Pct": 56.0,
+      "ROUGE_L_Pct": 20.2
+    },
+    {
+      "Agent_Architecture": "4. NeuroAgent Full LangGraph + 5-Gate Critic Reflection (Ours)",
+      "Gate_Compliance_Pct": 100.0,
+      "Full_Report_Cert_Pct": 100.0,
+      "Hallucination_Violation_Pct": 0.0,
+      "ROUGE_L_Pct": 4.0
+    }
+  ]
+}
