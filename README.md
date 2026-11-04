@@ -137,8 +137,8 @@ GEN AI + CAPSTONE/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Saumya-Prasad/NeuroAgent.git
-cd NeuroAgent
+git clone https://github.com/Saumya-Prasad/I057_I058_NeuroAgent_GenAI_Capstone.git
+cd I057_I058_NeuroAgent_GenAI_Capstone
 ```
 
 ### 2. Create and Activate Virtual Environment
@@ -180,3 +180,4 @@ python src/run_all_5_ablations_gpu.py
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
