@@ -98,7 +98,7 @@ All 5 ablations executed on an **NVIDIA GeForce RTX 4060 Laptop GPU** (`cuda:0`,
 ## 📁 Repository Structure
 
 ```
-GEN AI + CAPSTONE/
+I057_I058_NeuroAgent_GenAI_Capstone/
 ├── a04b06_5_folds_best_pth/           # Trained ACS-UNet 5-Fold Model Checkpoints (6 MB total)
 │   ├── a04b06_fold_1_best.pth
 │   └── ...
@@ -115,19 +115,18 @@ GEN AI + CAPSTONE/
 │   ├── STRIVE-2 (Small Vessel Disease Neuroimaging)
 │   ├── Radiopaedia ASPECTS Reference Article
 │   └── DAWN & DEFUSE-3 NEJM Thrombectomy Trials
-├── presentation_assets/               # High-Res Architecture Visuals & 6-Panel Dashboard Plot
-├── script_generator/                  # Defense Script Generation Modules (Parts 1 to 6)
-├── src/                               # Core Source Code
+├── src/                               # Core Source Code & GenAI RAG Pipeline
 │   ├── multi_agent_workflow.py        # LangGraph Multi-Agent System & 5-Gate Critic
 │   ├── perception.py                  # 3D ACS-UNet Perception Engine & Biomarkers
 │   ├── ingest_and_chunk_unstructured.py # Title-Aware Semantic Ingestion
 │   ├── rag_indexer.py                 # Sliding-Window Chunker & Vector Store Builder
 │   ├── run_all_5_ablations_gpu.py     # 100% Real Empirical 5-Ablation GPU Runner
-│   └── evaluate_unit5.py              # BLEU-4, ROUGE-L, METEOR, MRR Benchmark
+│   ├── evaluate_unit5.py              # BLEU-4, ROUGE-L, METEOR, MRR Benchmark
+│   └── ablation_chunking_study.py     # Chunking Ablation Study Script
 ├── app.py                             # Streamlit Interactive Web Application
-├── NeuroAgent_Master_Capstone_Deck_Redesigned.pptx # Master 40-Slide Presentation Deck
-├── NeuroAgent_Master_Capstone_Script_Comprehensive.pdf # 32-Page Complete Defense Script & Manual
+├── NeuroAgent_Capstone_Final_Report.md # Full Capstone Final Technical Report
 ├── requirements.txt                   # Version-Pinned Python Dependencies
+├── LICENSE                            # MIT License
 └── README.md
 ```
 

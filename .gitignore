@@ -55,13 +55,24 @@ ehthumbs.db
 *.7z
 BIOSE MRI A Multimodal Brain MRI Dataset with Clin.zip
 
+# Presentation Decks, Assets & Generator Scripts (Excluded per user request)
+*.pptx
+presentation_assets/
+generate_pptx.py
+generate_deck_assets.py
+generate_new_deck_visuals.py
+build_comprehensive_script.py
+convert_script_to_pdf.py
+script_generator/
+*Script*.*
+*Blueprint*.*
+
 # Coursework & Personal Temporary Files
 Unit *.pdf
 WhatsApp Image *.jpeg
 paper_extracted.txt
 deck_redesigned_extracted.txt
 264-ICTCS 2026.pdf
-Neuro_Copilot_Master_Presentation.pptx
 
 # Local Generated ChromaDB Vector Store (Rebuildable via 'python src/ingest_and_chunk_unstructured.py')
 data/vector_store/
