@@ -37,7 +37,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
 
-from src.multi_agent_workflow import NeuroAgentWorkflow
+from genai_rag_src.multi_agent_workflow import NeuroAgentWorkflow
 
 # ---------------------------------------------------------------------------
 # Metric Calculation Utilities (Unit 5 Slides 16-55)

@@ -44,7 +44,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
 
-from src.multi_agent_workflow import CriticReflectorAgent, ReportGeneratorAgent, ClinicalHistoryParser
+from genai_rag_src.multi_agent_workflow import CriticReflectorAgent, ReportGeneratorAgent, ClinicalHistoryParser
 
 GUIDELINES_DIR = os.path.join(BASE_DIR, "guildines")
 VECTOR_DB_DIR = os.path.join(BASE_DIR, "data", "vector_store")

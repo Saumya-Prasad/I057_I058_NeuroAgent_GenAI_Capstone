@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
 
-from src.perception import ACSUnetPerceptionEngine
+from genai_rag_src.perception import ACSUnetPerceptionEngine
 
 VECTOR_DB_DIR = os.path.join(BASE_DIR, "data", "vector_store")
 COLLECTION_NAME = "stroke_clinical_guidelines"

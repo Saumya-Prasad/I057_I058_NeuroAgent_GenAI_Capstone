@@ -115,7 +115,7 @@ I057_I058_NeuroAgent_GenAI_Capstone/
 │   ├── STRIVE-2 (Small Vessel Disease Neuroimaging)
 │   ├── Radiopaedia ASPECTS Reference Article
 │   └── DAWN & DEFUSE-3 NEJM Thrombectomy Trials
-├── src/                               # Core Source Code & GenAI RAG Pipeline
+├── genai_rag_src/                     # Core Source Code & GenAI RAG Pipeline
 │   ├── multi_agent_workflow.py        # LangGraph Multi-Agent System & 5-Gate Critic
 │   ├── perception.py                  # 3D ACS-UNet Perception Engine & Biomarkers
 │   ├── ingest_and_chunk_unstructured.py # Title-Aware Semantic Ingestion
@@ -150,7 +150,7 @@ pip install -r requirements.txt
 ### 3. Build the Vector Knowledge Base
 To ingest the 13 clinical PDFs and build the ChromaDB vector database locally:
 ```bash
-python src/ingest_and_chunk_unstructured.py
+python genai_rag_src/ingest_and_chunk_unstructured.py
 ```
 
 ### 4. Launch the Streamlit Interactive Copilot
@@ -163,7 +163,7 @@ streamlit run app.py
 ### 5. Reproduce the Real 5-Ablation GPU Suite
 To re-run all 5 empirical experiments on your local CUDA GPU:
 ```bash
-python src/run_all_5_ablations_gpu.py
+python genai_rag_src/run_all_5_ablations_gpu.py
 ```
 
 ---
